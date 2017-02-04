@@ -9,16 +9,17 @@
     background-image: url(alonzo-wide.png);
     background-size: cover;
     height: 500px;
-    z-index: 0; }
+    z-index: 1; }
     .Main-layout .Main-photo .Main-photo-mask {
       background: linear-gradient(to right, #Cf6766, rgba(255, 255, 255, 0) 60%);
       height: 500px;
       opacity: 0.7;
-      z-index: 1; }
+      z-index: 2; }
   .Main-layout .Main-photo-text-name {
     margin-top: -300px;
     margin-left: 12%;
     background-color: #8EAEBD;
+    /*background-color: #Cf6766 */
     color: white;
     width: 300px;
     height: 50px;
@@ -41,16 +42,13 @@
     padding-bottom: 0px;
     /*box-shadow: 2px 2px 2px #031424 */ }
   .Main-layout .header-banner {
-    background: #666;
+    /*background: #666 */
+    background: #Cf6766;
     opacity: 0.98;
-    display: flex;
     height: 70px;
     padding-left: 10%;
     padding-right: 10%; }
-  .Main-layout footer {
-    background: rgba(47, 47, 47, 0.98); }
-  .Main-layout header,
-  .Main-layout footer {
+  .Main-layout header {
     padding: 20px;
     color: rgba(255, 255, 255, 0.5);
     display: flex;
@@ -59,104 +57,114 @@
     font-weight: bold;
     padding: 16px 0;
     justify-content: space-between; }
-    .Main-layout header a,
-    .Main-layout footer a {
+    .Main-layout header a {
       color: rgba(255, 255, 255, 0.5);
       text-decoration: none;
       border-bottom: 0px solid transparent;
       transition: all 600ms;
       display: inline-block; }
-      .Main-layout header a:hover,
-      .Main-layout footer a:hover {
+      .Main-layout header a:hover {
         color: white;
         border-bottom: 1px solid white; }
-    .Main-layout header .nav,
-    .Main-layout footer .nav {
+    .Main-layout header .nav {
       display: flex;
       flex-grow: 2; }
-      .Main-layout header .nav .logo,
-      .Main-layout footer .nav .logo {
+      .Main-layout header .nav .logo {
         width: 40px;
         white-space: normal;
         word-wrap: break-word;
         color: #031424; }
-      .Main-layout header .nav h2,
-      .Main-layout footer .nav h2 {
+      .Main-layout header .nav h2 {
         font-size: 200%;
         margin-top: 7px; }
-      .Main-layout header .nav ul,
-      .Main-layout footer .nav ul {
+      .Main-layout header .nav ul {
         display: flex; }
-        .Main-layout header .nav ul li,
-        .Main-layout footer .nav ul li {
+        .Main-layout header .nav ul li {
           margin: 0 20px;
           margin-top: 1px;
           display: inline-block; }
-    .Main-layout header .github,
-    .Main-layout footer .github {
+    .Main-layout header .github {
+      margin-top: -10px;
       display: flex;
       text-align: right;
       align-items: center;
       padding-left: 100px; }
-      .Main-layout header .github .logo,
-      .Main-layout footer .github .logo {
+      .Main-layout header .github .logo {
+        margin-top: 0px;
         color: #031424;
         width: 60px;
         padding: 10px;
         font-size: 120%; }
-      .Main-layout header .github h2,
-      .Main-layout footer .github h2 {
+      .Main-layout header .github h2 {
         font-size: 200%;
         margin-top: 7px; }
-      .Main-layout header .github ul,
-      .Main-layout footer .github ul {
+      .Main-layout header .github ul {
+        margin-top: 15px;
         display: flex;
         margin-left: -40px; }
-        .Main-layout header .github ul li,
-        .Main-layout footer .github ul li {
+        .Main-layout header .github ul li {
           margin: 0 20px;
-          margin-top: 2px;
+          margin-top: -4px;
           display: inline-block; }
-    .Main-layout header .social,
-    .Main-layout footer .social {
+    .Main-layout header .social {
+      margin-top: -10px;
       display: flex;
       align-items: center; }
-      .Main-layout header .social .logo,
-      .Main-layout footer .social .logo {
+      .Main-layout header .social .logo {
+        margin-top: 2px;
         color: #031424;
         width: 60px;
         padding: 10px;
         font-size: 120%; }
-      .Main-layout header .social h2,
-      .Main-layout footer .social h2 {
+      .Main-layout header .social h2 {
         font-size: 200%;
         margin-top: 7px; }
-      .Main-layout header .social ul,
-      .Main-layout footer .social ul {
+      .Main-layout header .social ul {
+        margin-top: 15px;
         display: flex;
         margin-left: -50px; }
-        .Main-layout header .social ul li,
-        .Main-layout footer .social ul li {
+        .Main-layout header .social ul li {
           margin: 0 20px;
           margin-top: 2px;
           display: inline-block; }
-        .Main-layout header .social ul li:nth-of-type(2),
-        .Main-layout footer .social ul li:nth-of-type(2) {
-          margin-top: -1px; }
+        .Main-layout header .social ul li:nth-of-type(2) {
+          margin-top: 0px;
+          height: 30px; }
   .Main-layout .body {
+    margin-top: 204px;
     display: flex;
     flex-grow: 1;
-    background: pink; }
+    background: white;
+    /*background: #Cf6766 */ }
     .Main-layout .body .col-content {
-      background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
-      flex-grow: 1; }
+      background: linear-gradient(to right, #Cf6766, white);
+      flex-grow: 1;
+      align-items: center;
+      text-align: center;
+      z-index: 20; }
+      .Main-layout .body .col-content .card {
+        background: linear-gradient(to right 0.9, white, blue);
+        height: 300px;
+        width: 600px;
+        margin: auto;
+        margin-top: -30px;
+        z-index: 21;
+        /*box-shadow: 1px 1px 1px black */ }
     .Main-layout .body .col-navigation {
-      background: honeydew;
       width: 160px;
       order: -1; }
     .Main-layout .body .col-sidebar {
-      background: peachpuff;
       width: 160px; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  background: #Cf6766;
+  text-align: right;
+  align-items: right; }
+  footer .copyright {
+    text-align: center; }
 
 .sml {
   display: none; }

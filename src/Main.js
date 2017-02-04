@@ -72,7 +72,7 @@ class App extends Component {
 
 
         </div>
-
+        <footer><div className="copyright"><p>Copyright 2017 Alonzo Alden</p></div></footer>
       </div>
       </div>
     );
