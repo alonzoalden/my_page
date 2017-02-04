@@ -4,13 +4,13 @@
 .Main-layout
   display: flex
   flex-direction: column
-  height: calc(100vh)
+  /*height: calc(100vh)*/
 
   .Main-photo
     background-image: url(alonzo-wide.png)
     background-size: cover
     height: 500px
-    z-index: 1
+    z-index: 0
 
     .Main-photo-mask
       background: linear-gradient(to right, #Cf6766, rgba(255, 255, 255, 0) 60%)
@@ -18,34 +18,41 @@
       opacity: 0.7
       z-index: 2
 
-  .Main-photo-text-name
-    margin-top: -300px
-    margin-left: 12%
-    background-color: #8EAEBD
-    /*background-color: #Cf6766*/
-    color: white
-    width: 300px
-    height: 50px
-    text-align: center
-    font-size: 200%
-    z-index: 10
-    padding-top: 15px
-    /*box-shadow: 3px 3px 3px #031424*/
+  .Main-photo-text
+    height: 500px
+    margin-top: -500px
+    z-index: 50
 
-  .Main-photo-text-desc
-    margin-top: -10px
-    margin-left: 20%
-    background-color: #30415D
-    color: rgba(255,255,255,0.5)
-    width: 300px
-    height: 53px
-    text-align: center
-    font-size: 85%
-    z-index: 9
-    padding-top: 12px
-    padding-bottom: 0px
+    .Main-photo-text-name
+      margin-top: 100px
+      margin-left: 12%
+      background-color: #8EAEBD
+      /*background-color: #Cf6766*/
+      color: white
+      width: 300px
+      height: 50px
+      text-align: center
+      font-size: 200%
+      z-index: 70
+      padding-top: 15px
+      position: absolute
+      /*box-shadow: 3px 3px 3px #031424*/
 
-    /*box-shadow: 2px 2px 2px #031424*/
+    .Main-photo-text-desc
+      margin-top: 150px
+      margin-left: 20%
+      background-color: #30415D
+      color: rgba(255,255,255,0.5)
+      width: 300px
+      height: 53px
+      text-align: center
+      font-size: 85%
+      z-index: 60
+      padding-top: 12px
+      position: absolute
+      padding-bottom: 0px
+
+      /*box-shadow: 2px 2px 2px #031424*/
 
 
   .header-banner
@@ -159,27 +166,29 @@
 
 
   .body
-    margin-top: 204px
+
     display: flex
     flex-grow: 1
-    background: white
+    background: #eeeeee
     /*background: #Cf6766*/
 
+
     .col-content
-      background: linear-gradient(to right, #Cf6766, rgb(255, 255, 255))
+      /*background: linear-gradient(to right, #Cf6766, rgb(255, 255, 255))*/
       flex-grow: 1
-      align-items: center
-      text-align: center
-      z-index: 20
+      z-index: 9
+      margin-right: 25%
 
       .card
-        background: linear-gradient(to right 0.9, white, blue)
-        height: 300px
+        /*background: linear-gradient(to right, white, blue)*/
+        /*background: linear-gradient(to right, white 85%, lightgrey)*/
+        background: white
+        height: 500px
         width: 600px
         margin: auto
         margin-top: -30px
-        z-index: 21
-        /*box-shadow: 1px 1px 1px black*/
+        z-index: 30
+        box-shadow: 1px 1px 1px black
 
     .col-navigation
 

@@ -53,13 +53,16 @@ class App extends Component {
               <div className="Main-photo-mask"></div>
             </div>
 
-            <div className="Main-photo-text-name">alonzo alden</div>
-            <div className="Main-photo-text-desc"><p><strong>FULL STACK ENGINEER</strong></p></div>
+            <div className="Main-photo-text">
+              <div className="Main-photo-text-name">alonzo alden</div>
+              <div className="Main-photo-text-desc"><p><strong>FULL STACK ENGINEER</strong></p></div>
+            </div>
 
             <div className="body">
               <div className="col-content">
 
                 <div className="card">
+                s
                 </div>
 
 
@@ -72,7 +75,7 @@ class App extends Component {
 
 
         </div>
-        <footer><div className="copyright"><p>Copyright 2017 Alonzo Alden</p></div></footer>
+        <footer><div className="copyright"><p>Created by Alonzo Alden | Copyright 2017</p></div></footer>
       </div>
       </div>
     );
