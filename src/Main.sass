@@ -20,7 +20,7 @@
 
   .Main-photo-text-name
     margin-top: -300px
-    margin-left: 200px
+    margin-left: 12%
     background-color: #8EAEBD
     color: white
     width: 300px
@@ -29,25 +29,31 @@
     font-size: 200%
     z-index: 10
     padding-top: 15px
+    /*box-shadow: 3px 3px 3px #031424*/
 
   .Main-photo-text-desc
-    margin-top: -5px
-    margin-left: 240px
+    margin-top: -10px
+    margin-left: 20%
     background-color: #30415D
-    color: white
+    color: rgba(255,255,255,0.5)
     width: 300px
-    height: 55px
+    height: 53px
     text-align: center
     font-size: 85%
     z-index: 9
-    padding-top: 10px
+    padding-top: 12px
     padding-bottom: 0px
 
+    /*box-shadow: 2px 2px 2px #031424*/
+
+
   .header-banner
-    background: rgba(47,47,47,0.98)
+    background: #666
+    opacity: .98
     display: flex
     height: 70px
     padding-left: 10%
+    padding-right: 10%
 
 
   footer
@@ -58,6 +64,7 @@
     padding: 20px
     color: rgba(255,255,255,0.5)
     display: flex
+    flex-grow: 1
     font-size: 12px
     font-weight: bold
     padding: 16px 0
@@ -75,18 +82,15 @@
         color: rgba(255,255,255,1)
         border-bottom: 1px solid rgba(255,255,255,1)
 
-
-
-
     .nav
       display: flex
+      flex-grow: 2
 
       .logo
-
         width: 40px
         white-space: normal
-        overflow: auto
         word-wrap: break-word
+        color: #031424
 
       h2
         font-size: 200%
@@ -97,7 +101,59 @@
 
         li
           margin: 0 20px
+          margin-top: 1px
           display: inline-block
+    .github
+
+      display: flex
+      text-align: right
+      align-items: center
+      padding-left: 100px
+      .logo
+        color: #031424
+        width: 60px
+        padding: 10px
+        font-size: 120%
+
+      h2
+        font-size: 200%
+        margin-top: 7px
+
+      ul
+        display: flex
+        margin-left: -40px
+
+        li
+          margin: 0 20px
+          margin-top: 2px
+          display: inline-block
+
+    .social
+
+      display: flex
+      align-items: center
+
+      .logo
+        color: #031424
+        width: 60px
+        padding: 10px
+        font-size: 120%
+
+      h2
+        font-size: 200%
+        margin-top: 7px
+
+      ul
+        display: flex
+        margin-left: -50px
+
+        li
+          margin: 0 20px
+          margin-top: 2px
+          display: inline-block
+
+        li:nth-of-type(2)
+          margin-top: -1px
 
 
   .body
@@ -123,6 +179,30 @@
 
 
 @media (max-width: 800px)
+.sml
+  display: none
+
+  header
+    display: none
+    .nav
+      ul
+        li:first-of-type
+          display: none
+    .github
+      ul
+        margin-right: -20px
+        padding-left: 7px
+      .logo
+        display: none
+    .social
+      .logo
+        display: none
+      ul
+        display: none
+        li
+          display: none
+
+
   .body
     flex-direction: column
 

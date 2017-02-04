@@ -15,13 +15,35 @@ class App extends Component {
           <header>
             <div className="nav">
               <div className="logo">
-              a l o n z o - a l d e n
+                a l o n z o - a l d e n
               </div>
               <ul>
-                <li><a href="http://www.google.com">home</a></li>
-                <li><a href="http://www.google.com">projects</a></li>
-                <li><a href="http://www.google.com">strava</a></li>
-                <li><a href="http://www.google.com">contact</a></li>
+                <li><a href="http://www.google.com">HOME</a></li>
+                <li><a href="http://www.google.com">PROJECTS</a></li>
+                <li><a href="http://www.google.com">BLOG</a></li>
+                <li><a href="http://www.google.com">CONTACT</a></li>
+              </ul>
+            </div>
+            <div className="github">
+              <div className="logo">
+                GITHUB
+              </div>
+              <ul>
+                <li><a href="http://www.google.com"><img src="github-black-24px.png"></img></a></li>
+                <li><a href="http://www.google.com"><img src=""></img></a></li>
+
+              </ul>
+            </div>
+            <div className="social sml">
+              <div className="logo">
+                SOCIAL
+              </div>
+              <ul>
+                <li><a href="http://www.google.com"><img src="instagram-black-21px.png"></img></a></li>
+                <li><a href="http://www.google.com"><img src="facebook-black-22px.png"></img></a></li>
+                <li><a href="http://www.google.com"><img src="strava-black-24px.png"></img></a></li>
+                <li><a href="http://www.google.com"><img src="In-Black-21px-TM.png"></img></a></li>
+
               </ul>
             </div>
           </header>
@@ -32,7 +54,7 @@ class App extends Component {
             </div>
 
             <div className="Main-photo-text-name">alonzo alden</div>
-            <div className="Main-photo-text-desc"><p>FULL STACK ENGINEER</p></div>
+            <div className="Main-photo-text-desc"><p><strong>FULL STACK ENGINEER</strong></p></div>
 
             <div className="body">
               <div className="col-content">

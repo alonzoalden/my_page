@@ -17,7 +17,7 @@
       z-index: 1; }
   .Main-layout .Main-photo-text-name {
     margin-top: -300px;
-    margin-left: 200px;
+    margin-left: 12%;
     background-color: #8EAEBD;
     color: white;
     width: 300px;
@@ -25,24 +25,28 @@
     text-align: center;
     font-size: 200%;
     z-index: 10;
-    padding-top: 15px; }
+    padding-top: 15px;
+    /*box-shadow: 3px 3px 3px #031424 */ }
   .Main-layout .Main-photo-text-desc {
-    margin-top: -5px;
-    margin-left: 240px;
+    margin-top: -10px;
+    margin-left: 20%;
     background-color: #30415D;
-    color: white;
+    color: rgba(255, 255, 255, 0.5);
     width: 300px;
-    height: 55px;
+    height: 53px;
     text-align: center;
     font-size: 85%;
     z-index: 9;
-    padding-top: 10px;
-    padding-bottom: 0px; }
+    padding-top: 12px;
+    padding-bottom: 0px;
+    /*box-shadow: 2px 2px 2px #031424 */ }
   .Main-layout .header-banner {
-    background: rgba(47, 47, 47, 0.98);
+    background: #666;
+    opacity: 0.98;
     display: flex;
     height: 70px;
-    padding-left: 10%; }
+    padding-left: 10%;
+    padding-right: 10%; }
   .Main-layout footer {
     background: rgba(47, 47, 47, 0.98); }
   .Main-layout header,
@@ -50,6 +54,7 @@
     padding: 20px;
     color: rgba(255, 255, 255, 0.5);
     display: flex;
+    flex-grow: 1;
     font-size: 12px;
     font-weight: bold;
     padding: 16px 0;
@@ -67,13 +72,14 @@
         border-bottom: 1px solid white; }
     .Main-layout header .nav,
     .Main-layout footer .nav {
-      display: flex; }
+      display: flex;
+      flex-grow: 2; }
       .Main-layout header .nav .logo,
       .Main-layout footer .nav .logo {
         width: 40px;
         white-space: normal;
-        overflow: auto;
-        word-wrap: break-word; }
+        word-wrap: break-word;
+        color: #031424; }
       .Main-layout header .nav h2,
       .Main-layout footer .nav h2 {
         font-size: 200%;
@@ -84,7 +90,59 @@
         .Main-layout header .nav ul li,
         .Main-layout footer .nav ul li {
           margin: 0 20px;
+          margin-top: 1px;
           display: inline-block; }
+    .Main-layout header .github,
+    .Main-layout footer .github {
+      display: flex;
+      text-align: right;
+      align-items: center;
+      padding-left: 100px; }
+      .Main-layout header .github .logo,
+      .Main-layout footer .github .logo {
+        color: #031424;
+        width: 60px;
+        padding: 10px;
+        font-size: 120%; }
+      .Main-layout header .github h2,
+      .Main-layout footer .github h2 {
+        font-size: 200%;
+        margin-top: 7px; }
+      .Main-layout header .github ul,
+      .Main-layout footer .github ul {
+        display: flex;
+        margin-left: -40px; }
+        .Main-layout header .github ul li,
+        .Main-layout footer .github ul li {
+          margin: 0 20px;
+          margin-top: 2px;
+          display: inline-block; }
+    .Main-layout header .social,
+    .Main-layout footer .social {
+      display: flex;
+      align-items: center; }
+      .Main-layout header .social .logo,
+      .Main-layout footer .social .logo {
+        color: #031424;
+        width: 60px;
+        padding: 10px;
+        font-size: 120%; }
+      .Main-layout header .social h2,
+      .Main-layout footer .social h2 {
+        font-size: 200%;
+        margin-top: 7px; }
+      .Main-layout header .social ul,
+      .Main-layout footer .social ul {
+        display: flex;
+        margin-left: -50px; }
+        .Main-layout header .social ul li,
+        .Main-layout footer .social ul li {
+          margin: 0 20px;
+          margin-top: 2px;
+          display: inline-block; }
+        .Main-layout header .social ul li:nth-of-type(2),
+        .Main-layout footer .social ul li:nth-of-type(2) {
+          margin-top: -1px; }
   .Main-layout .body {
     display: flex;
     flex-grow: 1;
@@ -100,12 +158,28 @@
       background: peachpuff;
       width: 160px; }
 
-@media (max-width: 800px) {
-  .body {
+.sml {
+  display: none; }
+  .sml header {
+    display: none; }
+    .sml header .nav ul li:first-of-type {
+      display: none; }
+    .sml header .github ul {
+      margin-right: -20px;
+      padding-left: 7px; }
+    .sml header .github .logo {
+      display: none; }
+    .sml header .social .logo {
+      display: none; }
+    .sml header .social ul {
+      display: none; }
+      .sml header .social ul li {
+        display: none; }
+  .sml .body {
     flex-direction: column; }
-    .body .col-navigation {
+    .sml .body .col-navigation {
       min-width: 100%; }
-    .body .col-sidebar {
-      min-width: 100%; } }
+    .sml .body .col-sidebar {
+      min-width: 100%; }
 
 /*# sourceMappingURL=Main.css.map */
