@@ -6,20 +6,49 @@ class App extends Component {
   render() {
     return (
       <div>
-      <h1>PRACTICE GUIDE</h1>
+
       <div className="Main">
 
         <div className="Main-page Main-layout">
 
-          <header>header</header>
-            <div className="Main-photo"></div>
+        <div className="header-banner">
+          <header>
+            <div className="nav">
+              <div className="logo">
+              a l o n z o - a l d e n
+              </div>
+              <ul>
+                <li><a href="http://www.google.com">home</a></li>
+                <li><a href="http://www.google.com">projects</a></li>
+                <li><a href="http://www.google.com">strava</a></li>
+                <li><a href="http://www.google.com">contact</a></li>
+              </ul>
+            </div>
+          </header>
+        </div>
+
+            <div className="Main-photo">
+              <div className="Main-photo-mask"></div>
+            </div>
+
+            <div className="Main-photo-text-name">alonzo alden</div>
+            <div className="Main-photo-text-desc"><p>FULL STACK ENGINEER</p></div>
+
             <div className="body">
-              <div className="col-content">Main Content</div>
+              <div className="col-content">
+
+                <div className="card">
+                </div>
+
+
+
+
+              </div>
               <div className="col-navigation">Navigation</div>
               <div className="col-sidebar">Sidebar</div>
             </div>
 
-          <footer>footer</footer>
+
         </div>
 
       </div>

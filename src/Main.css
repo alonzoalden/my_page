@@ -1,31 +1,96 @@
-p {
-  padding: 40px;
-  background: #FAFAFA;
-  border-radius: 10px;
-  max-width: 500px; }
-
 .hide {
   display: none; }
 
 .Main-layout {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 80px); }
+  height: calc(100vh); }
   .Main-layout .Main-photo {
     background-image: url(alonzo-wide.png);
     background-size: cover;
-    height: 400px; }
+    height: 500px;
+    z-index: 0; }
+    .Main-layout .Main-photo .Main-photo-mask {
+      background: linear-gradient(to right, #Cf6766, rgba(255, 255, 255, 0) 60%);
+      height: 500px;
+      opacity: 0.7;
+      z-index: 1; }
+  .Main-layout .Main-photo-text-name {
+    margin-top: -300px;
+    margin-left: 200px;
+    background-color: #8EAEBD;
+    color: white;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    font-size: 200%;
+    z-index: 10;
+    padding-top: 15px; }
+  .Main-layout .Main-photo-text-desc {
+    margin-top: -5px;
+    margin-left: 240px;
+    background-color: #30415D;
+    color: white;
+    width: 300px;
+    height: 55px;
+    text-align: center;
+    font-size: 85%;
+    z-index: 9;
+    padding-top: 10px;
+    padding-bottom: 0px; }
+  .Main-layout .header-banner {
+    background: rgba(47, 47, 47, 0.98);
+    display: flex;
+    height: 70px;
+    padding-left: 10%; }
+  .Main-layout footer {
+    background: rgba(47, 47, 47, 0.98); }
   .Main-layout header,
   .Main-layout footer {
     padding: 20px;
-    background: #555;
-    color: white; }
+    color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 16px 0;
+    justify-content: space-between; }
+    .Main-layout header a,
+    .Main-layout footer a {
+      color: rgba(255, 255, 255, 0.5);
+      text-decoration: none;
+      border-bottom: 0px solid transparent;
+      transition: all 600ms;
+      display: inline-block; }
+      .Main-layout header a:hover,
+      .Main-layout footer a:hover {
+        color: white;
+        border-bottom: 1px solid white; }
+    .Main-layout header .nav,
+    .Main-layout footer .nav {
+      display: flex; }
+      .Main-layout header .nav .logo,
+      .Main-layout footer .nav .logo {
+        width: 40px;
+        white-space: normal;
+        overflow: auto;
+        word-wrap: break-word; }
+      .Main-layout header .nav h2,
+      .Main-layout footer .nav h2 {
+        font-size: 200%;
+        margin-top: 7px; }
+      .Main-layout header .nav ul,
+      .Main-layout footer .nav ul {
+        display: flex; }
+        .Main-layout header .nav ul li,
+        .Main-layout footer .nav ul li {
+          margin: 0 20px;
+          display: inline-block; }
   .Main-layout .body {
     display: flex;
     flex-grow: 1;
     background: pink; }
     .Main-layout .body .col-content {
-      background: lightblue;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
       flex-grow: 1; }
     .Main-layout .body .col-navigation {
       background: honeydew;
