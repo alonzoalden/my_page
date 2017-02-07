@@ -60,17 +60,27 @@ class App extends Component {
 
             <div className="body">
               <div className="col-content">
+                <div className="intro">
+                  <h1>
+                    Hi,
+                  </h1>
+                  <p> I'm a developer currently in the Greater Los Angeles area with remote experience. I'm passionate about creation and express it through web applications. I enjoy workong on all aspects of web development from small business sites to large scale interactive web applications.</p>
+                    <p> Feel free and get in touch with me through any of my social network accounts or by email:<br/></p><p><strong>alonzo.alden@hackreactor.com</strong></p>
+                </div>
 
-                <div className="card">
-                s
+                <div className="circle-connect">
+                  <div className="intro-circle-connect"></div>
+                  <div className="intro-circle-connect2"></div>
+                </div>
+
+                <div className="projects">
+                  <div className="project-display">
+                    <h1> PROJECTS </h1>
+                  </div>
                 </div>
 
 
-
-
               </div>
-              <div className="col-navigation">Navigation</div>
-              <div className="col-sidebar">Sidebar</div>
             </div>
 
 

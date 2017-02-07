@@ -13,7 +13,7 @@
     .Main-layout .Main-photo .Main-photo-mask {
       background: linear-gradient(to right, #Cf6766, rgba(255, 255, 255, 0) 60%);
       height: 500px;
-      opacity: 0.7;
+      opacity: 0.6;
       z-index: 2; }
   .Main-layout .Main-photo-text {
     height: 500px;
@@ -139,23 +139,63 @@
   .Main-layout .body {
     display: flex;
     flex-grow: 1;
-    background: #eeeeee;
-    /*background: #Cf6766 */ }
+    background: #ffeded; }
     .Main-layout .body .col-content {
-      /*background: linear-gradient(to right, #Cf6766, rgb(255, 255, 255)) */
       flex-grow: 1;
-      z-index: 9;
-      margin-right: 25%; }
+      z-index: 80;
+      align-items: center;
+      text-align: center; }
       .Main-layout .body .col-content .card {
         /*background: linear-gradient(to right, white, blue) */
         /*background: linear-gradient(to right, white 85%, lightgrey) */
         background: white;
-        height: 500px;
+        height: auto;
         width: 600px;
         margin: auto;
         margin-top: -30px;
         z-index: 30;
         box-shadow: 1px 1px 1px black; }
+      .Main-layout .body .col-content .intro {
+        font-family: "Open Sans Condensed";
+        color: #031424;
+        font-size: 26px;
+        margin: 0 auto;
+        text-align: left;
+        width: 500px;
+        padding: 120px;
+        padding-top: 60px;
+        z-index: 180; }
+      .Main-layout .body .col-content .circle-connect {
+        display: flex;
+        align-items: center;
+        margin: 0 auto; }
+        .Main-layout .body .col-content .circle-connect .intro-circle-connect {
+          background-image: linear-gradient(bottom, #ffeded 50%, #031424 50%);
+          height: 160px;
+          width: 160px;
+          border-radius: 100%;
+          margin: 0 auto;
+          margin-top: 0px; }
+        .Main-layout .body .col-content .circle-connect .intro-circle-connect2 {
+          background-image: linear-gradient(bottom, #ffeded 50%, #031424 50%);
+          height: 160px;
+          width: 160px;
+          border-radius: 100%;
+          margin: 0 auto;
+          margin-left: 400px;
+          margin-top: 0px; }
+      .Main-layout .body .col-content .projects {
+        margin-top: -81px;
+        height: 500px;
+        width: 100%;
+        background: #031424;
+        align-items: center;
+        z-index: 18; }
+        .Main-layout .body .col-content .projects .project-display {
+          width: 50%;
+          color: #ffeded;
+          margin: 0 auto;
+          padding: 100px; }
     .Main-layout .body .col-navigation {
       width: 160px;
       order: -1; }
