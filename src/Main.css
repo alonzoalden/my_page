@@ -9,7 +9,8 @@
     background-image: url(alonzo-wide.png);
     background-size: cover;
     height: 500px;
-    z-index: 0; }
+    z-index: 0;
+    box-shadow: 0px 20px 100px #Cf6766; }
     .Main-layout .Main-photo .Main-photo-mask {
       background: linear-gradient(to right, #Cf6766, rgba(255, 255, 255, 0) 60%);
       height: 500px;
@@ -186,16 +187,49 @@
           margin-top: 0px; }
       .Main-layout .body .col-content .projects {
         margin-top: -81px;
-        height: 500px;
+        height: auto;
         width: 100%;
         background: #031424;
+        z-index: 18;
         align-items: center;
-        z-index: 18; }
+        text-align: center;
+        color: #ffeded; }
+        .Main-layout .body .col-content .projects a {
+          color: #8EAEBD;
+          text-decoration: none; }
         .Main-layout .body .col-content .projects .project-display {
           width: 50%;
-          color: #ffeded;
           margin: 0 auto;
-          padding: 100px; }
+          padding: 100px;
+          align-items: center;
+          text-align: center; }
+          .Main-layout .body .col-content .projects .project-display .project-board {
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            width: 500px;
+            height: auto; }
+            .Main-layout .body .col-content .projects .project-display .project-board a {
+              text-decoration: none; }
+            .Main-layout .body .col-content .projects .project-display .project-board .project {
+              height: 200px;
+              width: 150px;
+              margin: 0 auto;
+              /* width: calc(100% * (1/4) - 10px - 1px) */ }
+              .Main-layout .body .col-content .projects .project-display .project-board .project .circle-icon {
+                height: 150px;
+                width: 150px;
+                border-radius: 100%;
+                color: #Cf6766;
+                background-color: #30415D; }
+                .Main-layout .body .col-content .projects .project-display .project-board .project .circle-icon .letter {
+                  font-size: 400%;
+                  font-style: strong;
+                  padding: 35px; }
+              .Main-layout .body .col-content .projects .project-display .project-board .project img {
+                border-radius: 100%;
+                height: 150px;
+                width: 150px; }
     .Main-layout .body .col-navigation {
       width: 160px;
       order: -1; }
@@ -203,6 +237,7 @@
       width: 160px; }
 
 footer {
+  font-size: 12px;
   display: flex;
   flex-direction: column;
   height: 50px;
@@ -211,6 +246,9 @@ footer {
   align-items: right; }
   footer .copyright {
     text-align: center; }
+    footer .copyright a {
+      color: #30415D;
+      text-decoration: none; }
 
 .sml {
   display: none; }

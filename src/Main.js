@@ -75,8 +75,37 @@ class App extends Component {
 
                 <div className="projects">
                   <div className="project-display">
-                    <h1> PROJECTS </h1>
+                  <h1> PROJECTS </h1>
+
+                    <div className="project-board">
+
+                      <div className="project">
+                        <img src="affirmation-collage.png"></img>
+                        <h3> Affirmation </h3>
+                      </div>
+                      <div className="project">
+                        <img src="keep-fit-icon.png"></img>
+                        <h3> Keep-Fit </h3>
+                      </div>
+                      <div className="project">
+                        <img src="portfolio.png"></img>
+                        <h3> My Portfolio </h3>
+                      </div>
+                      <div className="project">
+                        <img src="runkeeper.png"></img>
+                        <h3> Run Keeper </h3>
+                      </div>
+                      <div className="project">
+                        <div className="circle-icon">
+                          <div className="letter">
+                           DT
+                          </div>
+                        </div>
+                        <h3> Dino Task </h3>
+                      </div>
+                    </div>
                   </div>
+                    <h3>Check out my <a href="https://github.com/alonzoalden">Github</a> to see more of my work.</h3><br/><br/><br/>
                 </div>
 
 
@@ -85,7 +114,7 @@ class App extends Component {
 
 
         </div>
-        <footer><div className="copyright"><p>Created by Alonzo Alden | Copyright 2017</p></div></footer>
+        <footer><div className="copyright"><p>Created by <a href="mailto:alonzoalden@gmail.com">Alonzo Alden</a> | Copyright 2017</p></div></footer>
       </div>
       </div>
     );
