@@ -212,8 +212,8 @@
             .Main-layout .body .col-content .projects .project-display .project-board a {
               text-decoration: none; }
             .Main-layout .body .col-content .projects .project-display .project-board .project {
-              height: 200px;
-              width: 150px;
+              border: 1px solid black;
+              flex-grow: 1;
               margin: 0 auto;
               /* width: calc(100% * (1/4) - 10px - 1px) */ }
               .Main-layout .body .col-content .projects .project-display .project-board .project .circle-icon {
@@ -221,8 +221,10 @@
                 width: 150px;
                 border-radius: 100%;
                 color: #Cf6766;
-                background-color: #30415D; }
+                background-color: #8EAEBD;
+                margin: 0 auto; }
                 .Main-layout .body .col-content .projects .project-display .project-board .project .circle-icon .letter {
+                  flex-grow: 1;
                   font-size: 400%;
                   font-style: strong;
                   padding: 35px; }

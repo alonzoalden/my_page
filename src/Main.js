@@ -20,7 +20,6 @@ class App extends Component {
               <ul>
                 <li><a href="http://www.google.com">HOME</a></li>
                 <li><a href="http://www.google.com">PROJECTS</a></li>
-                <li><a href="http://www.google.com">BLOG</a></li>
                 <li><a href="http://www.google.com">CONTACT</a></li>
               </ul>
             </div>
@@ -29,8 +28,8 @@ class App extends Component {
                 GITHUB
               </div>
               <ul>
-                <li><a href="http://www.google.com"><img src="github-black-24px.png"></img></a></li>
-                <li><a href="http://www.google.com"><img src=""></img></a></li>
+                <li><a href="https://github.com/alonzoalden"><img src="github-black-24px.png"></img></a></li>
+                <li><a href=""><img src=""></img></a></li>
 
               </ul>
             </div>
@@ -39,10 +38,10 @@ class App extends Component {
                 SOCIAL
               </div>
               <ul>
-                <li><a href="http://www.google.com"><img src="instagram-black-21px.png"></img></a></li>
-                <li><a href="http://www.google.com"><img src="facebook-black-22px.png"></img></a></li>
-                <li><a href="http://www.google.com"><img src="strava-black-24px.png"></img></a></li>
-                <li><a href="http://www.google.com"><img src="In-Black-21px-TM.png"></img></a></li>
+                <li><a href="https://www.instagram.com/attaboylonnie/"><img src="instagram-black-21px.png"></img></a></li>
+                <li><a href="https://www.facebook.com/alonzo.alden"><img src="facebook-black-22px.png"></img></a></li>
+                <li><a href="https://www.strava.com/athletes/929395"><img src="strava-black-24px.png"></img></a></li>
+                <li><a href="https://www.linkedin.com/in/alonzo-alden-46b28637"><img src="In-Black-21px-TM.png"></img></a></li>
 
               </ul>
             </div>
@@ -64,7 +63,12 @@ class App extends Component {
                   <h1>
                     Hi,
                   </h1>
-                  <p> I'm a developer currently in the Greater Los Angeles area with remote experience. I'm passionate about creation and express it through web applications. I enjoy workong on all aspects of web development from small business sites to large scale interactive web applications.</p>
+                  <p> I'm a developer currently in the Greater Los Angeles area with remote experience. I'm passionate about creation and express it through web applications. I enjoy working on all aspects of web development from small business sites to large scale interactive web applications.</p>
+
+                  <p> Here are some of the technologies I'm experienced in:
+                    Javascript, Node.js, React, Angular, PostgreSQL, MongoDB, Webpack, Grunt, jQuery, HTML, CSS, Mocha and I strive to learn more. I'm competent in both front and back of the Full Stack.</p>
+
+
                     <p> Feel free and get in touch with me through any of my social network accounts or by email:<br/></p><p><strong>alonzo.alden@hackreactor.com</strong></p>
                 </div>
 
