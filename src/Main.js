@@ -10,7 +10,7 @@ const customStyles = {
     left              : 0,
     right             : 0,
     bottom            : 0,
-    backgroundColor   : '#Cf6766',
+    backgroundColor   : '#031424',
     zIndex           : 2000
   },
   content : {
@@ -19,7 +19,11 @@ const customStyles = {
     right                 : 'auto',
     bottom                : 'auto',
     marginRight           : '-50%',
-    transform             : 'translate(-50%, -50%)'
+    transform             : 'translate(-50%, -50%)',
+    width: '380px',
+    height: '600px',
+    fontFamily: 'Open Sans Condensed',
+    fontSize: '90%'
   }
 };
 
@@ -139,16 +143,19 @@ class App extends Component {
                           contentLabel="Example Modal"
                         >
 
-                          <h2 ref="subtitle">Hello</h2>
-                          <button onClick={this.closeModal}>close</button>
-                          <div>I am a modal</div>
-                          <form>
-                            <input />
-                            <button>tab navigation</button>
-                            <button>stays</button>
-                            <button>inside</button>
-                            <button>the modal</button>
-                          </form>
+                            <img style={{width: "380px", height: "380px"}} src="affirmation-collage.png"></img>
+
+
+                          <h2>Affirmation</h2>
+                          <p>Affirmation is a web based application where experienced software engineers can offer advice to developing engineers.  It's a tool for software developers of all levels to connect, inspire, and create a supportive community.</p>
+                          <p><strong>Tech Stack:</strong> React, Node.js, Express.js, PostgreSQL, Sequelize, Webpack, Auth0 and it's deployed via Heroku. </p>
+                          <div style={{display: 'flex'}}>
+                            <div style={{flexGrow: '1', display: 'flex'}}>
+                              <div className='button'>DEPLOYED LINK</div>
+                              <div className='button'>GITHUB</div>
+                            </div>
+                            <div className='button'>CLOSE</div>
+                          </div>
                         </Modal>
 
                         <img src="affirmation-collage.png"></img>
@@ -185,7 +192,27 @@ class App extends Component {
 
 
         </div>
-        <footer><div className="copyright"><p>Created by <a href="mailto:alonzoalden@gmail.com">Alonzo Alden</a> | Copyright 2017</p></div></footer>
+        <footer>
+          <div className="bottom">
+            <div className="bottom-left">
+              <h1>Alonzo Alden</h1>
+                <ul>
+                  SOCIAL:
+                  <li><a href="https://www.instagram.com/attaboylonnie/"><img src="instagram-black-21px.png"></img></a></li>
+                  <li><a href="https://www.facebook.com/alonzo.alden"><img src="facebook-black-22px.png"></img></a></li>
+                  <li><a href="https://www.strava.com/athletes/929395"><img src="strava-black-24px.png"></img></a></li>
+                  <li><a href="https://www.linkedin.com/in/alonzo-alden-46b28637"><img src="In-Black-21px-TM.png"></img></a></li>
+
+                </ul>
+
+            </div>
+            <div className="bottom-right"><span style={{color: '#8EAEBD'}}> Thanks for stopping by. </span><br/><span style={{color: '#30415D'}}>Get in touch.</span>
+            </div>
+          </div>
+
+          <div className="copyright"><p>© 2017 <a href="mailto:alonzoalden@gmail.com">Alonzo Alden</a> </p>
+          </div>
+        </footer>
       </div>
       </div>
     );

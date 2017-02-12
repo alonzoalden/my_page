@@ -2,6 +2,23 @@ $font: "Open Sans Condensed"
 .hide
   display: none
 
+.button
+
+  color: white
+  font-weight: bold
+  background-color: #8EAEBD
+  height: 25px
+  width: 100px
+  padding-top: 5px
+  padding-bottom: -15px
+  text-align: center
+  border: 1px solid white
+  border-radius: 5px
+  &:hover
+    transition: background 0.5s ease
+    background-color: #30415D
+    color: #Cf6766
+
 .Main-layout
   display: flex
   flex-direction: column
@@ -232,7 +249,7 @@ $font: "Open Sans Condensed"
         align-items: center
         text-align: center
         color: #ffeded
-
+        font-family: $font
         a
           color: #8EAEBD
           text-decoration: none
@@ -251,13 +268,19 @@ $font: "Open Sans Condensed"
             flex-wrap: wrap
             width: 500px
             height: auto
+            border-radius: 5px
             a
               text-decoration: none
 
             .project
-
-              flex-grow: 1
-              margin: 0 auto
+              width: 150px
+              margin: 5px auto
+              &:hover
+                background-color: #30415D
+                border-radius: 5px
+                color: #Cf6766
+                transition: background 0.5s ease
+                -webkit-animation: all 5s ease
 
               .circle-icon
                 height: 150px
@@ -277,7 +300,8 @@ $font: "Open Sans Condensed"
                 border-radius: 100%
                 height: 150px
                 width: 150px
-              /* width: calc(100% * (1/4) - 10px - 1px)*/
+                /* width: calc(100% * (1/4) - 10px - 1px)*/
+
 
 
 
@@ -293,18 +317,52 @@ $font: "Open Sans Condensed"
 
 footer
   font-size: 12px
-  display: flex
-  flex-direction: column
-  height: 50px
   background: #Cf6766
-  text-align: right
-  align-items: right
+  font-family: $font
+
+  .bottom
+    display: flex
+
+    .bottom-left
+      flex-grow: 1
+      flex-shrink: 1
+      height: 250px
+
+      margin: 0 auto
+      text-align: center
+      ul
+        align-items: center
+
+        display: flex
+        font-size: 140%
+        font-weight: bold
+
+        li
+          align-items: center
+
+          margin: 0 auto
+          padding-left: 20px
+          display: inline-block
+
+
+
+    .bottom-right
+      text-align: center
+      margin: 0 auto
+      padding-top: 80px
+      height: 170px
+      font-size: 400%
+      font-weight: strong
+      flex-grow: 2
+
 
   .copyright
+    margin-top: 30px
     text-align: center
     a
       color: #30415D
       text-decoration: none
+
 
 
 @media (max-width: 800px)
