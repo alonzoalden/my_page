@@ -212,7 +212,6 @@
             .Main-layout .body .col-content .projects .project-display .project-board a {
               text-decoration: none; }
             .Main-layout .body .col-content .projects .project-display .project-board .project {
-              border: 1px solid black;
               flex-grow: 1;
               margin: 0 auto;
               /* width: calc(100% * (1/4) - 10px - 1px) */ }
