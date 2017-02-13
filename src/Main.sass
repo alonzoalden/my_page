@@ -24,6 +24,7 @@ $font: "Open Sans Condensed"
   flex-direction: column
   /*height: calc(100vh)*/
 
+
   .Main-photo
     background-image: url(alonzo-wide.png)
     background-size: cover
@@ -241,7 +242,7 @@ $font: "Open Sans Condensed"
 
 
       .projects
-        margin-top: -81px
+        margin-top: -100px
         height: auto
         width: 100%
         background: #031424
@@ -255,12 +256,12 @@ $font: "Open Sans Condensed"
           text-decoration: none
 
         .project-display
-          width: 50%
+
+          width: 100%
           margin: 0 auto
-          padding: 100px
+          padding: 0px
           align-items: center
           text-align: center
-
 
           .project-board
             margin: 0 auto
@@ -272,44 +273,10 @@ $font: "Open Sans Condensed"
             a
               text-decoration: none
 
-            .project
-              width: 150px
-              margin: 5px auto
-              &:hover
-                background-color: #30415D
-                border-radius: 5px
-                color: #Cf6766
-                transition: background 0.5s ease
-                -webkit-animation: all 5s ease
-
-              .circle-icon
-                height: 150px
-                width: 150px
-                border-radius: 100%
-                color: #Cf6766
-                background-color: #8EAEBD
-                margin: 0 auto
-
-                .letter
-                  flex-grow: 1
-                  font-size: 400%
-                  font-style: strong
-                  padding: 35px
-
-              img
-                border-radius: 100%
-                height: 150px
-                width: 150px
-                /* width: calc(100% * (1/4) - 10px - 1px)*/
-
-
-
-
     .col-navigation
 
       width: 160px
       order: -1
-
 
     .col-sidebar
 
@@ -326,18 +293,28 @@ footer
     .bottom-left
       flex-grow: 1
       flex-shrink: 1
-      height: 250px
-
+      height: 220px
+      padding-top: 30px
       margin: 0 auto
-      text-align: center
-      ul
-        align-items: center
+      text-align: left
+      a
+        text-decoration: none
+        color: #8EAEBD
+      h1
+        margin-left: 40px
+        color: white
 
-        display: flex
+      h2
+        margin-left: 40px
+      ul
+
+        align-items: center
+        width: 70%
         font-size: 140%
         font-weight: bold
 
         li
+
           align-items: center
 
           margin: 0 auto
@@ -359,6 +336,7 @@ footer
   .copyright
     margin-top: 30px
     text-align: center
+    background-color: #8EAEBD
     a
       color: #30415D
       text-decoration: none
@@ -366,28 +344,29 @@ footer
 
 
 @media (max-width: 800px)
-.sml
-  display: none
-
-  header
+  .sml
     display: none
-    .nav
-      ul
-        li:first-of-type
+
+  .Main-layout
+    header
+      display: none
+      .nav
+        ul
+          li:first-of-type
+            display: none
+      .github
+        ul
+          margin-right: -20px
+          padding-left: 7px
+        .logo
           display: none
-    .github
-      ul
-        margin-right: -20px
-        padding-left: 7px
-      .logo
-        display: none
-    .social
-      .logo
-        display: none
-      ul
-        display: none
-        li
+      .social
+        .logo
           display: none
+        ul
+          display: none
+          li
+            display: none
 
 
   .body

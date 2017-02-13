@@ -1,31 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './Main.css';
-import Modal from 'react-modal';
+import ProjectModal from './ProjectModal.js';
 
-const customStyles = {
-  overlay : {
-    position          : 'fixed',
-    top               : 0,
-    left              : 0,
-    right             : 0,
-    bottom            : 0,
-    backgroundColor   : '#031424',
-    zIndex           : 2000
-  },
-  content : {
-    top                   : '50%',
-    left                  : '50%',
-    right                 : 'auto',
-    bottom                : 'auto',
-    marginRight           : '-50%',
-    transform             : 'translate(-50%, -50%)',
-    width: '380px',
-    height: '600px',
-    fontFamily: 'Open Sans Condensed',
-    fontSize: '90%'
-  }
-};
 
 class App extends Component {
   constructor() {
@@ -133,57 +110,44 @@ class App extends Component {
 
                     <div className="project-board">
 
+                      <ProjectModal
+                        title="Affirmation"
+                        img="affirmation-collage.png"
+                        desc="Affirmation is a web based application where experienced software engineers can offer advice to developing engineers.  It's a tool for software developers of all levels to connect, inspire, and create a supportive community."
+                        tech="React, Node.js, Express.js, PostgreSQL, Sequelize, Webpack, Auth0 and it's deployed via Heroku."
+                        github="https://github.com/HRR20-Lotus/affirmation.io"
+                        url="http://www.affirmation.io">
+                      </ProjectModal>
 
-                      <div className="project" onClick={this.openModal}>
-                        <Modal
-                          isOpen={this.state.modalIsOpen}
-                          onAfterOpen={this.afterOpenModal}
-                          onRequestClose={this.closeModal}
-                          style={customStyles}
-                          contentLabel="Example Modal"
-                        >
+                      <ProjectModal
+                        title="Keep-Fit"
+                        img="keep-fit-icon.png"
+                        desc="Keep Fit is an exercise tool where you can design and plan upcoming workouts. This application provides structure and motivation to anyone who needs that extra support for their exercise regimen."
+                        tech="PostgreSQL, Sequelize, Node.js, Express.js, React, Flux, Google Maps API, and Material UI"
+                        github="https://github.com/hrr20-dino/Keep-Fit"
+                        url="https://keep-fit-app.herokuapp.com/">
+                      </ProjectModal>
 
-                            <img style={{width: "380px", height: "380px"}} src="affirmation-collage.png"></img>
+                      <ProjectModal
+                        title="My Portfolio"
+                        img="portfolio.png"
+                        desc="This is the website you are currently visiting. It has original design, style, and images by me. "
+                        tech="React, Node.js, Express, Webpack"
+                        github="https://github.com/alonzoalden/my_page"
+                        url="https://keep-fit-app.herokuapp.com/">
+                      </ProjectModal>
+                      <ProjectModal
+                        title="Run Keeper"
+                        img="runkeeper.png"
+                        desc="Run Keeper is a handy tool for runners to help them stay motivated and in-shape. You can score points and compete! Each run is logged with specific details such as intensity, duration and speed, resulting in a score."
+                        tech="MongoDB, Express, Node.js, AngularJS 1.x (MEAN stack)"
+                        github="https://github.com/alonzoalden/runkeeper"
+                        url="false">
+                      </ProjectModal>
 
-
-                          <h2>Affirmation</h2>
-                          <p>Affirmation is a web based application where experienced software engineers can offer advice to developing engineers.  It's a tool for software developers of all levels to connect, inspire, and create a supportive community.</p>
-                          <p><strong>Tech Stack:</strong> React, Node.js, Express.js, PostgreSQL, Sequelize, Webpack, Auth0 and it's deployed via Heroku. </p>
-                          <div style={{display: 'flex'}}>
-                            <div style={{flexGrow: '1', display: 'flex'}}>
-                              <div className='button'>DEPLOYED LINK</div>
-                              <div className='button'>GITHUB</div>
-                            </div>
-                            <div className='button'>CLOSE</div>
-                          </div>
-                        </Modal>
-
-                        <img src="affirmation-collage.png"></img>
-                        <h3> Affirmation </h3>
-                      </div>
-                      <div className="project">
-                        <img src="keep-fit-icon.png"></img>
-                        <h3> Keep-Fit </h3>
-                      </div>
-                      <div className="project">
-                        <img src="portfolio.png"></img>
-                        <h3> My Portfolio </h3>
-                      </div>
-                      <div className="project">
-                        <img src="runkeeper.png"></img>
-                        <h3> Run Keeper </h3>
-                      </div>
-                      <div className="project">
-                        <div className="circle-icon">
-                          <div className="letter">
-                           DT
-                          </div>
-                        </div>
-                        <h3> Dino Task </h3>
-                      </div>
                     </div>
                   </div>
-                    <h3>Check out my <a href="https://github.com/alonzoalden">Github</a> to see more of my work.</h3><br/><br/><br/>
+                    <h3>Check out my <a href="https://github.com/alonzoalden">Github</a> to see more of my work.</h3><br/>
                 </div>
 
 
@@ -195,15 +159,13 @@ class App extends Component {
         <footer>
           <div className="bottom">
             <div className="bottom-left">
-              <h1>Alonzo Alden</h1>
-                <ul>
-                  SOCIAL:
-                  <li><a href="https://www.instagram.com/attaboylonnie/"><img src="instagram-black-21px.png"></img></a></li>
-                  <li><a href="https://www.facebook.com/alonzo.alden"><img src="facebook-black-22px.png"></img></a></li>
-                  <li><a href="https://www.strava.com/athletes/929395"><img src="strava-black-24px.png"></img></a></li>
-                  <li><a href="https://www.linkedin.com/in/alonzo-alden-46b28637"><img src="In-Black-21px-TM.png"></img></a></li>
+              <h1>alonzoalden@gmail.com</h1>
+              <h2><a href="https://github.com/alonzoalden/">GITHUB</a></h2>
+              <h2><a href="https://github.com/alonzoalden/">LINKEDIN</a></h2>
+              <h2><a href="https://github.com/alonzoalden/">STRAVA</a></h2>
+              <h2><a href="https://github.com/alonzoalden/">FACEBOOK</a></h2>
 
-                </ul>
+
 
             </div>
             <div className="bottom-right"><span style={{color: '#8EAEBD'}}> Thanks for stopping by. </span><br/><span style={{color: '#30415D'}}>Get in touch.</span>

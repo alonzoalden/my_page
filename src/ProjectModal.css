@@ -1,0 +1,32 @@
+.project {
+  height: 250px;
+  width: 150px;
+  margin: 5px auto;
+  transition: font 0.1s linear; }
+  .project:hover {
+    background-color: #30415D;
+    border-radius: 4px;
+    color: #Cf6766;
+    transition: background 0.5s ease;
+    -webkit-animation: all 5s ease;
+    font-size: 120%;
+    margin-bottom: 5px; }
+  .project .circle-icon {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    color: #Cf6766;
+    background-color: #8EAEBD;
+    margin: 0 auto; }
+    .project .circle-icon .letter {
+      flex-grow: 1;
+      font-size: 400%;
+      font-style: strong;
+      padding: 35px; }
+  .project img {
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+    /* width: calc(100% * (1/4) - 10px - 1px) */ }
+
+/*# sourceMappingURL=ProjectModal.css.map */

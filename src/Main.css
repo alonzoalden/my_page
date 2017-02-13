@@ -202,7 +202,7 @@
           margin-left: 400px;
           margin-top: 0px; }
       .Main-layout .body .col-content .projects {
-        margin-top: -81px;
+        margin-top: -100px;
         height: auto;
         width: 100%;
         background: #031424;
@@ -215,9 +215,9 @@
           color: #8EAEBD;
           text-decoration: none; }
         .Main-layout .body .col-content .projects .project-display {
-          width: 50%;
+          width: 100%;
           margin: 0 auto;
-          padding: 100px;
+          padding: 0px;
           align-items: center;
           text-align: center; }
           .Main-layout .body .col-content .projects .project-display .project-board {
@@ -229,32 +229,6 @@
             border-radius: 5px; }
             .Main-layout .body .col-content .projects .project-display .project-board a {
               text-decoration: none; }
-            .Main-layout .body .col-content .projects .project-display .project-board .project {
-              width: 150px;
-              margin: 5px auto; }
-              .Main-layout .body .col-content .projects .project-display .project-board .project:hover {
-                background-color: #30415D;
-                border-radius: 5px;
-                color: #Cf6766;
-                transition: background 0.5s ease;
-                -webkit-animation: all 5s ease; }
-              .Main-layout .body .col-content .projects .project-display .project-board .project .circle-icon {
-                height: 150px;
-                width: 150px;
-                border-radius: 100%;
-                color: #Cf6766;
-                background-color: #8EAEBD;
-                margin: 0 auto; }
-                .Main-layout .body .col-content .projects .project-display .project-board .project .circle-icon .letter {
-                  flex-grow: 1;
-                  font-size: 400%;
-                  font-style: strong;
-                  padding: 35px; }
-              .Main-layout .body .col-content .projects .project-display .project-board .project img {
-                border-radius: 100%;
-                height: 150px;
-                width: 150px;
-                /* width: calc(100% * (1/4) - 10px - 1px) */ }
     .Main-layout .body .col-navigation {
       width: 160px;
       order: -1; }
@@ -270,12 +244,21 @@ footer {
     footer .bottom .bottom-left {
       flex-grow: 1;
       flex-shrink: 1;
-      height: 250px;
+      height: 220px;
+      padding-top: 30px;
       margin: 0 auto;
-      text-align: center; }
+      text-align: left; }
+      footer .bottom .bottom-left a {
+        text-decoration: none;
+        color: #8EAEBD; }
+      footer .bottom .bottom-left h1 {
+        margin-left: 40px;
+        color: white; }
+      footer .bottom .bottom-left h2 {
+        margin-left: 40px; }
       footer .bottom .bottom-left ul {
         align-items: center;
-        display: flex;
+        width: 70%;
         font-size: 140%;
         font-weight: bold; }
         footer .bottom .bottom-left ul li {
@@ -293,33 +276,37 @@ footer {
       flex-grow: 2; }
   footer .copyright {
     margin-top: 30px;
-    text-align: center; }
+    text-align: center;
+    background-color: #8EAEBD; }
     footer .copyright a {
       color: #30415D;
       text-decoration: none; }
 
-.sml {
-  display: none; }
-  .sml header {
+@media (max-width: 800px) {
+  .sml {
     display: none; }
-    .sml header .nav ul li:first-of-type {
+
+  .Main-layout header {
+    display: none; }
+    .Main-layout header .nav ul li:first-of-type {
       display: none; }
-    .sml header .github ul {
+    .Main-layout header .github ul {
       margin-right: -20px;
       padding-left: 7px; }
-    .sml header .github .logo {
+    .Main-layout header .github .logo {
       display: none; }
-    .sml header .social .logo {
+    .Main-layout header .social .logo {
       display: none; }
-    .sml header .social ul {
+    .Main-layout header .social ul {
       display: none; }
-      .sml header .social ul li {
+      .Main-layout header .social ul li {
         display: none; }
-  .sml .body {
+
+  .body {
     flex-direction: column; }
-    .sml .body .col-navigation {
+    .body .col-navigation {
       min-width: 100%; }
-    .sml .body .col-sidebar {
-      min-width: 100%; }
+    .body .col-sidebar {
+      min-width: 100%; } }
 
 /*# sourceMappingURL=Main.css.map */
