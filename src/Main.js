@@ -9,26 +9,11 @@ class App extends Component {
     super();
 
     this.state = {
-      modalIsOpen: false
+      picture: [],
     }
 
-  this.openModal = this.openModal.bind(this);
-  this.afterOpenModal = this.afterOpenModal.bind(this);
-  this.closeModal = this.closeModal.bind(this);
-
   }
 
-  openModal() {
-    this.setState({modalIsOpen: true});
-  }
-
-  afterOpenModal() {
-    this.refs.subtitle.style.color = '#f00';
-  }
-
-  closeModal() {
-    this.setState({modalIsOpen: false});
-  }
 
   render() {
     return (
@@ -158,7 +143,9 @@ class App extends Component {
         </div>
         <footer>
           <div className="bottom">
-            <div className="bottom-left">
+            <div className="bottom-left"><span style={{color: '#8EAEBD'}}> Thanks for stopping by. </span><br/><span style={{color: '#30415D'}}>Get in touch.</span>
+            </div>
+            <div className="bottom-right">
               <h1>alonzoalden@gmail.com</h1>
               <h2><a href="https://github.com/alonzoalden/">GITHUB</a></h2>
               <h2><a href="https://github.com/alonzoalden/">LINKEDIN</a></h2>
@@ -167,8 +154,6 @@ class App extends Component {
 
 
 
-            </div>
-            <div className="bottom-right"><span style={{color: '#8EAEBD'}}> Thanks for stopping by. </span><br/><span style={{color: '#30415D'}}>Get in touch.</span>
             </div>
           </div>
 
