@@ -19,6 +19,11 @@ class App extends Component {
   render() {
 
   let currentStyle = this.state.number === 1 ? pictures[0] : pictures[1]
+  setInterval(function() {
+    console.log('asfasdfasdfadsfHIHII');
+    }, 3000);
+
+
     return (
       <div>
 
@@ -146,7 +151,10 @@ class App extends Component {
         </div>
         <footer>
           <div className="bottom">
-            <div className="bottom-left"><span style={{color: '#8EAEBD'}}> Thanks for stopping by. </span><br/><span style={{color: '#30415D'}}>Get in touch.</span>
+            <div className="bottom-left">
+              <img src="lonbluebottle.png"></img>
+            </div>
+            <div className="bottom-mid"><span style={{color: '#8EAEBD'}}> Thanks for stopping by. </span><br/><span style={{color: '#30415D'}}>Get in touch.</span>
             </div>
             <div className="bottom-right">
               <h1>alonzoalden@gmail.com</h1>

@@ -53,6 +53,17 @@ class ProjectModal extends Component {
     this.setState({modalIsOpen: false});
   }
 
+  showDeployButton(url) {
+    if (url === "false") {
+      return;
+    } else {
+
+    return (
+      <div className='button'>DEPLOYED LINK</div>
+      )
+    }
+  }
+
   render() {
     return (
       <div className="project" onClick={this.openModal}>
@@ -69,7 +80,8 @@ class ProjectModal extends Component {
           <p><strong>Tech Stack:</strong> {this.props.tech}</p>
           <div style={{display: 'flex'}}>
             <div style={{flexGrow: '1', display: 'flex'}}>
-              <div className='button'>DEPLOYED LINK</div>
+
+              {this.showDeployButton(this.props.url)}
               <div className='button'>GITHUB</div>
             </div>
             <div className='button'>CLOSE</div>
