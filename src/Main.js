@@ -3,19 +3,22 @@ import logo from './logo.svg';
 import './Main.css';
 import ProjectModal from './ProjectModal.js';
 
+const pictures = ["alonzo-wide.png", "runkeeper.png"]
 
 class App extends Component {
   constructor() {
     super();
 
     this.state = {
-      picture: [],
+      number: 1
     }
 
   }
 
 
   render() {
+
+  let currentStyle = this.state.number === 1 ? pictures[0] : pictures[1]
     return (
       <div>
 
