@@ -89,13 +89,10 @@ class App extends Component {
                     Javascript, Node.js, React, Angular, PostgreSQL, MongoDB, Webpack, Grunt, jQuery, HTML, CSS, Mocha and I strive to learn more. I'm competent in both front and back of the Full Stack.</p>
 
 
-                    <p> Feel free and get in touch with me through any of my social network accounts or by email:<br/></p><p><strong>alonzo.alden@hackreactor.com</strong></p>
+                    <p> Feel free and get in touch with me through any of my social network accounts or by email:<br/></p><p><strong>alonzoalden@gmail.com</strong></p>
                 </div>
 
-                <div className="circle-connect">
-                  <div className="intro-circle-connect"></div>
-                  <div className="intro-circle-connect2"></div>
-                </div>
+
 
                 <div className="projects">
                   <div className="project-display">
@@ -154,18 +151,29 @@ class App extends Component {
             <div className="bottom-left">
               <img src="lonbluebottle.png"></img>
             </div>
-            <div className="bottom-mid"><span style={{color: '#8EAEBD'}}> Thanks for stopping by. </span><br/><span style={{color: '#30415D'}}>Get in touch.</span>
+            <div className="bottom-mid"><span style={{color: '#8EAEBD'}}> Thanks for stopping by. </span><br/><span style={{color: '#30415D'}}>Get in touch.</span><br/>
+              <span style={{color: '#30415D', fontSize: '18px'}}>alonzoalden@gmail.com</span>
+
+
+                <table>
+                  <tr>
+                    <td>
+                      <a href="https://github.com/alonzoalden/">GITHUB</a>
+                    </td>
+                    <td>
+                      <a href="https://github.com/alonzoalden/">LINKEDIN</a>
+                    </td>
+                    <td>
+                      <a href="https://github.com/alonzoalden/">STRAVA</a>
+                    </td>
+                    <td>
+                      <a href="https://github.com/alonzoalden/">FACEBOOK</a>
+                    </td>
+                  </tr>
+                </table>
+
             </div>
-            <div className="bottom-right">
-              <h1>alonzoalden@gmail.com</h1>
-              <h2><a href="https://github.com/alonzoalden/">GITHUB</a></h2>
-              <h2><a href="https://github.com/alonzoalden/">LINKEDIN</a></h2>
-              <h2><a href="https://github.com/alonzoalden/">STRAVA</a></h2>
-              <h2><a href="https://github.com/alonzoalden/">FACEBOOK</a></h2>
 
-
-
-            </div>
           </div>
 
           <div className="copyright"><p>© 2017 <a href="mailto:alonzoalden@gmail.com">Alonzo Alden</a> </p>

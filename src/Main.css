@@ -175,7 +175,7 @@
       .Main-layout .body .col-content .intro {
         font-family: "Open Sans Condensed";
         color: #031424;
-        font-size: 26px;
+        font-size: 20px;
         margin: 0 auto;
         text-align: left;
         width: 500px;
@@ -202,7 +202,9 @@
           margin-left: 400px;
           margin-top: 0px; }
       .Main-layout .body .col-content .projects {
-        margin-top: -100px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        margin-top: 0px;
         height: auto;
         width: 100%;
         background: #031424;
@@ -224,7 +226,7 @@
             margin: 0 auto;
             display: flex;
             flex-wrap: wrap;
-            width: 500px;
+            width: 650px;
             height: auto;
             border-radius: 5px; }
             .Main-layout .body .col-content .projects .project-display .project-board a {
@@ -237,7 +239,7 @@
 
 footer {
   font-size: 12px;
-  background: #Cf6766;
+  background: #ffeded;
   font-family: "Open Sans Condensed"; }
   footer .bottom {
     display: flex;
@@ -253,8 +255,7 @@ footer {
       border-radius: 0px; }
     footer .bottom .bottom-left img {
       width: 200px;
-      border-radius: 3px;
-      margin-top: 50px; }
+      border-radius: 3px; }
     footer .bottom .bottom-right {
       width: 200px;
       padding-top: 35px;
@@ -279,13 +280,20 @@ footer {
     footer .bottom .bottom-mid {
       width: 400px;
       text-align: right;
-      margin-top: -50px;
-      font-size: 400%;
+      font-size: 300%;
       font-weight: strong; }
+      footer .bottom .bottom-mid table {
+        text-align: center;
+        font-size: 18px;
+        margin-right: 0px;
+        margin-left: auto;
+        border: 1px solid black; }
+        footer .bottom .bottom-mid table td {
+          border: 1px solid black;
+          width: 70px; }
   footer .copyright {
     margin-top: 30px;
-    text-align: center;
-    background-color: #8EAEBD; }
+    text-align: center; }
     footer .copyright a {
       color: #30415D;
       text-decoration: none; }
