@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './Main.css';
 import ProjectModal from './ProjectModal.js';
+import Nav from './Nav.js';
 
 const pictures = ["alonzo-wide.png", "runkeeper.png"]
 
@@ -30,43 +31,8 @@ class App extends Component {
       <div className="Main">
 
         <div className="Main-page Main-layout">
+          <Nav />
 
-        <div className="header-banner">
-          <header>
-            <div className="nav">
-              <div className="logo">
-                a l o n z o - a l d e n
-              </div>
-              <ul>
-                <li><a href="http://www.google.com">HOME</a></li>
-                <li><a href="http://www.google.com">PROJECTS</a></li>
-                <li><a href="http://www.google.com">CONTACT</a></li>
-              </ul>
-            </div>
-            <div className="github">
-              <div className="logo">
-                GITHUB
-              </div>
-              <ul>
-                <li><a href="https://github.com/alonzoalden"><img src="github-black-24px.png"></img></a></li>
-                <li><a href=""><img src=""></img></a></li>
-
-              </ul>
-            </div>
-            <div className="social sml">
-              <div className="logo">
-                SOCIAL
-              </div>
-              <ul>
-                <li><a href="https://www.instagram.com/attaboylonnie/"><img src="instagram-black-21px.png"></img></a></li>
-                <li><a href="https://www.facebook.com/alonzo.alden"><img src="facebook-black-22px.png"></img></a></li>
-                <li><a href="https://www.strava.com/athletes/929395"><img src="strava-black-24px.png"></img></a></li>
-                <li><a href="https://www.linkedin.com/in/alonzo-alden-46b28637"><img src="In-Black-21px-TM.png"></img></a></li>
-
-              </ul>
-            </div>
-          </header>
-        </div>
 
             <div className="Main-photo">
               <div className="Main-photo-mask"></div>

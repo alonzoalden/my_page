@@ -85,6 +85,7 @@ $font: "Open Sans Condensed"
     padding-right: 10%
 
   header
+    font-family: $font
     padding: 20px
     color: rgba(255,255,255,0.5)
     display: flex
@@ -102,9 +103,6 @@ $font: "Open Sans Condensed"
       display: inline-block
 
 
-      &:hover
-        color: rgba(255,255,255,1)
-        border-bottom: 1px solid rgba(255,255,255,1)
 
     .nav
       display: flex
@@ -127,6 +125,11 @@ $font: "Open Sans Condensed"
           margin: 0 20px
           margin-top: 1px
           display: inline-block
+          &:hover
+            background-color: #8EAEBD
+            color: #Cf6766
+            transition: background 0.5s ease
+            -webkit-animation: all 5s ease
     .github
       margin-top: -10px
       display: flex
@@ -214,7 +217,7 @@ $font: "Open Sans Condensed"
         font-size: 20px
         margin: 0 auto
         text-align: left
-        width: 500px
+        width: 650px
         padding: 120px
         padding-top: 60px
         z-index: 180
@@ -314,7 +317,8 @@ footer
 
 
     .bottom-right
-      width: 200px
+      border: 1px solid black
+      width: 225px
       padding-top: 35px
       text-align: left
       a
@@ -342,7 +346,7 @@ footer
 
 
     .bottom-mid
-      width: 400px
+      width: 425px
 
       text-align: right
       font-size: 300%
@@ -353,11 +357,17 @@ footer
         font-size: 18px
         margin-right: 0px
         margin-left: auto
-        border: 1px solid black
-        td
-          border: 1px solid black
-          width: 70px
 
+        td
+          width: 70px
+          on
+          &:hover
+            background-color: #8EAEBD
+            color: #Cf6766
+            transition: background 0.5s ease
+            -webkit-animation: all 5s ease
+        a
+          text-decoration: none
 
   .copyright
     margin-top: 30px
