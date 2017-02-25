@@ -18,7 +18,7 @@ class Nav extends Component {
       <header>
         <div className="nav">
           <div className="logo">
-            a l o n z o - a l d e n
+            ALONZO ALDEN
           </div>
           <table>
             <tr>
@@ -31,28 +31,13 @@ class Nav extends Component {
           </table>
 
         </div>
-        <div className="github">
-          <div className="logo">
-            GITHUB
-          </div>
-          <ul>
-            <li><a href="https://github.com/alonzoalden"><img src="github-black-24px.png"></img></a></li>
-            <li><a href=""><img src=""></img></a></li>
 
-          </ul>
+        <div className="socialNetwork">
+          <img src="socialmedia.png"></img>
         </div>
-        <div className="social sml">
-          <div className="logo">
-            SOCIAL
-          </div>
-          <ul>
-            <li><a href="https://www.instagram.com/attaboylonnie/"><img src="instagram-black-21px.png"></img></a></li>
-            <li><a href="https://www.facebook.com/alonzo.alden"><img src="facebook-black-22px.png"></img></a></li>
-            <li><a href="https://www.strava.com/athletes/929395"><img src="strava-black-24px.png"></img></a></li>
-            <li><a href="https://www.linkedin.com/in/alonzo-alden-46b28637"><img src="In-Black-21px-TM.png"></img></a></li>
 
-          </ul>
-        </div>
+
+
       </header>
     </div>
     );

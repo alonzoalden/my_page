@@ -1,4 +1,8 @@
 $font: "Open Sans Condensed"
+$darkBlue: "#30415D"
+$lightBlue: "#8EAEBD"
+$white: "#FFEDED"
+
 .hide
   display: none
 
@@ -43,6 +47,7 @@ $font: "Open Sans Condensed"
     height: 500px
     margin-top: -500px
     z-index: 50
+    font-family: $font
 
     .Main-photo-text-name
       margin-top: 100px
@@ -51,142 +56,34 @@ $font: "Open Sans Condensed"
       /*background-color: #Cf6766*/
       color: white
       width: 300px
-      height: 50px
+      height: 90px
       text-align: center
-      font-size: 200%
+      font-size: 60px
       z-index: 70
-      padding-top: 15px
+      padding-top: 2px
       position: absolute
+      opacity: 0.85
       /*box-shadow: 3px 3px 3px #031424*/
 
     .Main-photo-text-desc
-      margin-top: 150px
+      margin-top: 180px
       margin-left: 20%
       background-color: #30415D
       color: rgba(255,255,255,0.5)
       width: 300px
-      height: 53px
+      height: 80px
       text-align: center
-      font-size: 85%
+      font-size: 25px
       z-index: 60
-      padding-top: 12px
       position: absolute
       padding-bottom: 0px
+      opacity: 0.85
 
       /*box-shadow: 2px 2px 2px #031424*/
 
 
-  .header-banner
-    /*background: #666*/
-    background: #Cf6766
-    opacity: .98
-    height: 70px
-    padding-left: 10%
-    padding-right: 10%
-
-  header
-    font-family: $font
-    padding: 20px
-    color: rgba(255,255,255,0.5)
-    display: flex
-    flex-grow: 1
-    font-size: 12px
-    font-weight: bold
-    padding: 16px 0
-    justify-content: space-between
-
-    a
-      color: rgba(255,255,255,0.5)
-      text-decoration: none
-      border-bottom: 0px solid transparent
-      transition: all 600ms
-      display: inline-block
 
 
-
-    .nav
-      display: flex
-      flex-grow: 2
-
-      .logo
-        width: 40px
-        white-space: normal
-        word-wrap: break-word
-        color: #031424
-
-      h2
-        font-size: 200%
-        margin-top: 7px
-
-      ul
-        display: flex
-
-        li
-          margin: 0 20px
-          margin-top: 1px
-          display: inline-block
-          &:hover
-            background-color: #8EAEBD
-            color: #Cf6766
-            transition: background 0.5s ease
-            -webkit-animation: all 5s ease
-    .github
-      margin-top: -10px
-      display: flex
-      text-align: right
-      align-items: center
-      padding-left: 100px
-      .logo
-        margin-top: 0px
-        color: #031424
-        width: 60px
-        padding: 10px
-        font-size: 120%
-
-      h2
-        font-size: 200%
-        margin-top: 7px
-
-      ul
-        margin-top: 15px
-        display: flex
-        margin-left: -40px
-
-        li
-
-          margin: 0 20px
-          margin-top: -4px
-          display: inline-block
-
-    .social
-      margin-top: -10px
-      display: flex
-      align-items: center
-
-      .logo
-        margin-top: 2px
-        color: #031424
-        width: 60px
-        padding: 10px
-        font-size: 120%
-
-      h2
-        font-size: 200%
-        margin-top: 7px
-
-      ul
-        margin-top: 15px
-        display: flex
-        margin-left: -50px
-
-        li
-          margin: 0 20px
-          margin-top: 2px
-          display: inline-block
-
-        li:nth-of-type(2)
-          margin-top: 0px
-          height: 30px
 
   .body
 

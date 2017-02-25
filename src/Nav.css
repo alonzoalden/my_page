@@ -1,56 +1,77 @@
 .header-banner {
   background: #Cf6766;
   opacity: 0.98;
-  height: 70px; }
+  height: 60px; }
   .header-banner a {
-    color: #8EAEBD;
+    color: #30415D;
     text-decoration: none;
     border-bottom: 0px solid transparent;
     transition: all 600ms;
     display: inline-block; }
 
 header {
-  color: rgba(255, 255, 255, 0.5);
   font-size: 12px;
   font-weight: bold;
   justify-content: space-between;
   padding-left: 100px;
+  padding-right: 100px;
   display: flex; }
-  header .nav table {
-    width: 340px;
-    margin-left: 20px;
-    height: 75px;
-    margin-top: -18px; }
-    header .nav table td {
-      width: 60px;
-      text-align: center; }
-      header .nav table td:hover {
-        padding-top: 3px;
-        border-bottom: 3px solid #8EAEBD;
-        border-top: 1px solid #8EAEBD;
-        background-color: #30415D;
-        transition: background 1s ease;
-        -webkit-animation: all 5s ease; }
-  header .nav .logo {
-    margin-left: 25px;
-    width: 100px;
-    padding-top: 5px;
-    white-space: normal;
-    word-wrap: break-word;
-    color: #031424; }
-  header .nav h2 {
-    font-size: 200%; }
-  header .nav ul {
+  header .nav {
     display: flex; }
-    header .nav ul li {
-      margin: 0 20px;
-      margin-top: 1px;
-      display: inline-block; }
-      header .nav ul li:hover {
-        background-color: #8EAEBD;
-        color: #Cf6766;
-        transition: background 0.5s ease;
-        -webkit-animation: all 5s ease; }
+    header .nav table {
+      width: 340px;
+      margin-left: 20px;
+      height: 65px;
+      margin-top: -2px; }
+      header .nav table td {
+        width: 60px;
+        text-align: center; }
+        header .nav table td:hover {
+          padding-top: 2px;
+          border-bottom: 3px solid #30415D;
+          border-top: 2px solid #30415D;
+          background-color: #8EAEBD;
+          transition: background 0.5s ease;
+          -webkit-animation: all 5s ease; }
+    header .nav .logo {
+      margin-left: 25px;
+      width: 70px;
+      font-size: 12px;
+      margin-top: 22px;
+      font-weight: strong;
+      white-space: normal;
+      word-wrap: break-word;
+      color: #031424; }
+  header .socialNetwork {
+    background-color: #30415D;
+    height: 24px;
+    width: 24px;
+    border-radius: 100%;
+    margin-top: 18px;
+    text-align: center; }
+    header .socialNetwork img {
+      margin: 0 auto;
+      margin-top: -3px;
+      margin-left: -3px;
+      height: 30px;
+      width: 30px; }
+    header .socialNetwork:hover {
+      background-color: #8EAEBD;
+      transition: background 0.5s ease;
+      -webkit-animation: all 5s ease; }
+    header .socialNetwork h2 {
+      font-size: 200%; }
+    header .socialNetwork ul {
+      display: flex; }
+      header .socialNetwork ul li {
+        margin: 0 20px;
+        margin-top: 1px;
+        display: inline-block; }
+        header .socialNetwork ul li:hover {
+          background-color: #8EAEBD;
+          color: #Cf6766;
+          transition: background 0.5s ease;
+          -webkit-animation: all 5s ease; }
   header .github {
     margin-top: -10px;
     display: flex;

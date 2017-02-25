@@ -1,49 +1,72 @@
 .header-banner
   background: #Cf6766
   opacity: .98
-  height: 70px
+  height: 60px
   a
-    color: #8EAEBD
+    color: #30415D
     text-decoration: none
     border-bottom: 0px solid transparent
     transition: all 600ms
     display: inline-block
 
 header
-  color: rgba(255,255,255,0.5)
   font-size: 12px
   font-weight: bold
   justify-content: space-between
   padding-left: 100px
+  padding-right: 100px
   display: flex
+
   .nav
+    display: flex
     table
       width: 340px
       margin-left: 20px
-      height: 75px
-      margin-top: -18px
+      height: 65px
+      margin-top: -2px
       td
         width: 60px
         text-align: center
         a
         &:hover
-          padding-top: 3px
-          border-bottom: 3px solid #8EAEBD
-          border-top: 1px solid #8EAEBD
-          background-color: #30415D
-          transition: background 1.0s ease
+          padding-top: 2px
+          border-bottom: 3px solid #30415D
+          border-top: 2px solid #30415D
+          background-color: #8EAEBD
+          transition: background 0.5s ease
           -webkit-animation: all 5s ease
 
 
 
     .logo
-      margin-left: 25px
-      width: 100px
 
-      padding-top: 5px
+      margin-left: 25px
+      width: 70px
+      font-size: 12px
+      margin-top: 22px
+      font-weight: strong
       white-space: normal
       word-wrap: break-word
       color: #031424
+
+  .socialNetwork
+    background-color: #30415D
+    height: 24px
+    width: 24px
+    border-radius: 100%
+    margin-top: 18px
+    text-align: center
+    img
+      margin: 0 auto
+      margin-top: -3px
+      margin-left: -3px
+      height: 30px
+      width: 30px
+
+    &:hover
+      background-color: #8EAEBD
+      transition: background 0.5s ease
+      -webkit-animation: all 5s ease
 
     h2
       font-size: 200%
