@@ -94,6 +94,9 @@ class Nav extends Component {
             <a href="https://github.com/alonzoalden/">STRAVA</a>
           </div>
           <div className="socialTab">
+            <a href="https://github.com/alonzoalden/">INSTAGRAM</a>
+          </div>
+          <div className="socialTab">
             <a href="https://github.com/alonzoalden/">FACEBOOK</a>
           </div>
           <br /><br />
