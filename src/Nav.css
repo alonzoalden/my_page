@@ -9,8 +9,21 @@
     transition: all 600ms;
     display: inline-block; }
 
+.socialTab {
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  font-size: 32px; }
+  .socialTab a {
+    text-decoration: none;
+    color: #031424; }
+  .socialTab:hover {
+    background-color: #031424; }
+    .socialTab:hover a {
+      color: #8EAEBD; }
+
 header {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   justify-content: space-between;
   padding-left: 100px;
@@ -30,31 +43,31 @@ header {
           padding-top: 2px;
           border-bottom: 3px solid #30415D;
           border-top: 2px solid #30415D;
-          background-color: #8EAEBD;
+          background-color: #031424;
           transition: background 0.5s ease;
           -webkit-animation: all 5s ease; }
+          header .nav table td:hover a {
+            color: #8EAEBD; }
     header .nav .logo {
       margin-left: 25px;
       width: 70px;
-      font-size: 12px;
-      margin-top: 22px;
-      font-weight: strong;
+      margin-top: 21px;
+      font-weight: bold;
       white-space: normal;
       word-wrap: break-word;
       color: #031424; }
   header .socialNetwork {
-    background-color: #30415D;
-    height: 24px;
-    width: 24px;
+    height: 30px;
+    width: 30px;
     border-radius: 100%;
-    margin-top: 18px;
+    margin-top: 15px;
     text-align: center; }
     header .socialNetwork img {
       margin: 0 auto;
       margin-top: -3px;
       margin-left: -3px;
-      height: 30px;
-      width: 30px; }
+      height: 36px;
+      width: 36px; }
     header .socialNetwork:hover {
       background-color: #8EAEBD;
       transition: background 0.5s ease;

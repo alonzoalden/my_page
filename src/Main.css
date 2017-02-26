@@ -40,9 +40,8 @@
     .Main-layout .Main-photo-text .Main-photo-text-name {
       margin-top: 100px;
       margin-left: 12%;
-      background-color: #8EAEBD;
-      /*background-color: #Cf6766 */
-      color: white;
+      background-color: rgba(142, 174, 189, 0.83);
+      color: #FFEDED;
       width: 300px;
       height: 90px;
       text-align: center;
@@ -50,13 +49,12 @@
       z-index: 70;
       padding-top: 2px;
       position: absolute;
-      opacity: 0.85;
       /*box-shadow: 3px 3px 3px #031424 */ }
     .Main-layout .Main-photo-text .Main-photo-text-desc {
       margin-top: 180px;
       margin-left: 20%;
-      background-color: #30415D;
-      color: rgba(255, 255, 255, 0.5);
+      background-color: rgba(48, 65, 93, 0.83);
+      color: #CF6766;
       width: 300px;
       height: 80px;
       text-align: center;
@@ -64,7 +62,6 @@
       z-index: 60;
       position: absolute;
       padding-bottom: 0px;
-      opacity: 0.85;
       /*box-shadow: 2px 2px 2px #031424 */ }
   .Main-layout .body {
     display: flex;
