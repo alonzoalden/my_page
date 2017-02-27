@@ -93,7 +93,7 @@ class Nav extends Component {
       <header>
         <div className="nav">
 
-          <Link activeClass="active" to="top" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
+          <Link activeClass="active" to="top" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>
             <div className="logo">
               ALONZO ALDEN
             </div>
@@ -102,19 +102,19 @@ class Nav extends Component {
 
 
 
-              <Link activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
+              <Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>
                 <div className="navButton">ABOUT</div>
               </Link>
-              <Link activeClass="active" to="proj" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
+              <Link activeClass="active" to="proj" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>
                 <div className="navButton">PROJECTS</div>
               </Link>
-              <Link activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
+              <Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>
                 <div className="navButton">BLOG</div>
               </Link>
-              <Link activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
+              <Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>
                 <div className="navButton">GITHUB</div>
               </Link>
-              <Link activeClass="active" to="contact" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
+              <Link activeClass="active" to="contact" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>
                 <div className="navButton">CONTACT</div>
               </Link>
 
