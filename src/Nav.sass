@@ -1,7 +1,10 @@
 .header-banner
   background: #Cf6766
-  opacity: .98
-  height: 60px
+  opacity: .90
+  height: 55px
+  z-index: 2000
+
+  position: fixed
   a
     color: #30415D
     text-decoration: none
@@ -29,21 +32,59 @@ header
   padding-left: 100px
   padding-right: 100px
   display: flex
+  z-index: 1112
+  background: #Cf6766
+  position: fixed
+  width: 89%
 
   .nav
     display: flex
+
+    .logo
+      margin-left: 25px
+      width: 90px
+      margin-top: 21px
+      font-weight: bold
+      white-space: normal
+      word-wrap: break-word
+      color: #031424
+
+    .navButton
+      width: 70px
+      text-align: center
+      height: 40px
+      padding-top: 21px
+
+      &:hover
+        height: 38px
+        padding-top: 19px
+        border-bottom: 2px solid #8EAEBD
+        border-top: 2px solid #8EAEBD
+        background-color: #031424
+        transition: background 0.5s ease
+        -webkit-animation: all 5s ease
+        a
+          color: #8EAEBD
+
+
     table
       width: 340px
       margin-left: 20px
-      height: 65px
+      height: 30px
       margin-top: -2px
+      margin-bottom: -2px
       td
         width: 60px
         text-align: center
+        height: 33px
+        padding-top: 19px
         &:hover
-          padding-top: 2px
-          border-bottom: 3px solid #8EAEBD
+          margin-top: -12px
+          margin-bottom: -5px
+          height: 30px
+          border-bottom: 2px solid #8EAEBD
           border-top: 2px solid #8EAEBD
+
           background-color: #031424
           transition: background 0.5s ease
           -webkit-animation: all 5s ease
@@ -52,28 +93,22 @@ header
 
 
 
-    .logo
-
-      margin-left: 25px
-      width: 70px
-      margin-top: 21px
-      font-weight: bold
-      white-space: normal
-      word-wrap: break-word
-      color: #031424
 
   .socialNetwork
+
+    border: 1px solid black
     height: 30px
     width: 30px
     border-radius: 100%
     margin-top: 15px
     text-align: center
+    z-index: 3333
     img
-      margin: 0 auto
       margin-top: -3px
       margin-left: -3px
       height: 36px
       width: 36px
+      z-index: 3334
 
 
     &:hover

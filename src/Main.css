@@ -22,6 +22,7 @@
   flex-direction: column;
   /*height: calc(100vh) */ }
   .Main-layout .Main-photo {
+    margin-top: 61px;
     background-image: url(alonzo-wide.png);
     background-size: cover;
     height: 500px;
@@ -83,14 +84,14 @@
         z-index: 30;
         box-shadow: 1px 1px 1px black; }
       .Main-layout .body .col-content .intro {
+        height: 90vh;
         font-family: "Open Sans Condensed";
         color: #031424;
         font-size: 20px;
         margin: 0 auto;
         text-align: left;
         width: 650px;
-        padding: 120px;
-        padding-top: 60px;
+        padding-top: 140px;
         z-index: 180; }
       .Main-layout .body .col-content .circle-connect {
         display: flex;
@@ -112,10 +113,10 @@
           margin-left: 400px;
           margin-top: 0px; }
       .Main-layout .body .col-content .projects {
-        padding-top: 70px;
-        padding-bottom: 70px;
+        padding-top: 140px;
+        padding-bottom: 0px;
         margin-top: 0px;
-        height: auto;
+        height: 80vh;
         width: 100%;
         background: #031424;
         z-index: 18;
@@ -153,10 +154,7 @@ footer {
   font-family: "Open Sans Condensed"; }
   footer .bottom {
     display: flex;
-    padding: 0;
-    padding-top: 60px;
-    padding-bottom: 40px;
-    height: 290px;
+    height: 91.5vh;
     align-items: center;
     justify-content: center;
     margin: 0 auto; }

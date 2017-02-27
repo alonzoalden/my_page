@@ -3,6 +3,13 @@ import logo from './logo.svg';
 import './Main.css';
 import ProjectModal from './ProjectModal.js';
 import Nav from './Nav.js';
+import Scroll from 'react-scroll';
+
+const Link = Scroll.Link;
+const Element = Scroll.Element;
+const Events = Scroll.Events;
+const scroll= Scroll.animateScroll;
+const scrollSpy = Scroll.scrollSpy;
 
 const pictures = ["alonzo-wide.png", "runkeeper.png"]
 
@@ -16,6 +23,39 @@ class App extends Component {
 
   }
 
+  componentDidMount() {
+
+    Events.scrollEvent.register('begin', function(to, element) {
+      console.log("begin", arguments);
+    });
+
+    Events.scrollEvent.register('end', function(to, element) {
+      console.log("end", arguments);
+    });
+
+    scrollSpy.update();
+
+  }
+
+  componentWillUnmount() {
+    Events.scrollEvent.remove('begin');
+    Events.scrollEvent.remove('end');
+  }
+  scrollToTop() {
+    scroll.scrollToTop();
+  }
+  scrollToBottom() {
+    scroll.scrollToBottom();
+  }
+  scrollTo() {
+    scroll.scrollTo(100);
+  }
+  scrollMore() {
+    scroll.scrollMore(100);
+  }
+  handleSetActive(to) {
+    console.log(to);
+  }
 
   render() {
 
@@ -33,19 +73,20 @@ class App extends Component {
         <div className="Main-page Main-layout">
           <Nav />
 
-
+          <Element name="top" className="element">
             <div className="Main-photo">
               <div className="Main-photo-mask"></div>
             </div>
-
+          </Element>
             <div className="Main-photo-text">
               <div className="Main-photo-text-name">alonzo alden</div>
               <div className="Main-photo-text-desc"><p><strong>FULL STACK ENGINEER</strong></p></div>
             </div>
 
-            <div className="body">
+            <div className="body" >
               <div className="col-content">
-                <div className="intro">
+                <Element name="test1" className="element">
+                <div id="about" className="intro">
                   <h1>
                     Hi,
                   </h1>
@@ -57,10 +98,11 @@ class App extends Component {
 
                     <p> Feel free and get in touch with me through any of my social network accounts or by email:<br/></p><p><strong>alonzoalden@gmail.com</strong></p>
                 </div>
+                </Element>
 
 
-
-                <div className="projects">
+                <Element name="proj" className="element">
+                <div id="proj" className="projects">
                   <div className="project-display">
                   <h1> PROJECTS </h1>
 
@@ -105,14 +147,15 @@ class App extends Component {
                   </div>
                     <h3>Check out my <a href="https://github.com/alonzoalden">Github</a> to see more of my work.</h3><br/>
                 </div>
-
+                </Element>
 
               </div>
             </div>
 
 
         </div>
-        <footer>
+        <Element name="contact" className="element">
+        <footer id="contact">
           <div className="bottom">
             <div className="bottom-left">
               <img src="lonbluebottle.png"></img>
@@ -130,6 +173,9 @@ class App extends Component {
                       <a href="https://github.com/alonzoalden/">LINKEDIN</a>
                     </td>
                     <td>
+                      <a href="https://github.com/alonzoalden/">INSTAGRAM</a>
+                    </td>
+                    <td>
                       <a href="https://github.com/alonzoalden/">STRAVA</a>
                     </td>
                     <td>
@@ -145,6 +191,7 @@ class App extends Component {
           <div className="copyright"><p>© 2017 <a href="mailto:alonzoalden@gmail.com">Alonzo Alden</a> </p>
           </div>
         </footer>
+        </Element>
       </div>
       </div>
     );

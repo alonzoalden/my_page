@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import './Main.css';
 import './Nav.css';
 import Modal from 'react-modal';
+import Scroll from 'react-scroll';
+
+const Link = Scroll.Link;
+const Element = Scroll.Element;
+const Events = Scroll.Events;
+const scroll= Scroll.animateScroll;
+const scrollSpy = Scroll.scrollSpy;
 
 const customStyles = {
   overlay : {
@@ -54,6 +61,30 @@ class Nav extends Component {
     this.setState({modalIsOpen: false});
   }
 
+  componentWillUnmount() {
+    Events.scrollEvent.remove('begin');
+    Events.scrollEvent.remove('end');
+  }
+
+  scrollToTop() {
+    scroll.scrollToTop();
+  }
+
+  scrollToBottom() {
+    scroll.scrollToBottom();
+  }
+
+  scrollTo() {
+    scroll.scrollTo(100);
+  }
+
+  scrollMore() {
+    scroll.scrollMore(100);
+  }
+
+  handleSetActive(to) {
+    console.log(to);
+  }
 
   render() {
 
@@ -61,18 +92,32 @@ class Nav extends Component {
     <div className="header-banner">
       <header>
         <div className="nav">
-          <div className="logo">
-            ALONZO ALDEN
-          </div>
-          <table>
-            <tr>
-              <td><a href="http://www.google.com">ABOUT</a></td>
-              <td><a href="http://www.google.com">PROJECTS</a></td>
-              <td><a href="http://www.google.com">BLOG</a></td>
-              <td><a href="http://www.google.com">GITHUB</a></td>
-              <td><a href="http://www.google.com">CONTACT</a></td>
-            </tr>
-          </table>
+
+          <Link activeClass="active" to="top" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
+            <div className="logo">
+              ALONZO ALDEN
+            </div>
+          </Link>
+
+
+
+
+              <Link activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
+                <div className="navButton">ABOUT</div>
+              </Link>
+              <Link activeClass="active" to="proj" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
+                <div className="navButton">PROJECTS</div>
+              </Link>
+              <Link activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
+                <div className="navButton">BLOG</div>
+              </Link>
+              <Link activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
+                <div className="navButton">GITHUB</div>
+              </Link>
+              <Link activeClass="active" to="contact" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
+                <div className="navButton">CONTACT</div>
+              </Link>
+
 
         </div>
 
