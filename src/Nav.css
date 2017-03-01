@@ -1,6 +1,6 @@
 .header-banner {
   background: #Cf6766;
-  opacity: 0.9;
+  opacity: 1;
   height: 55px;
   z-index: 2000;
   border-bottom: 1px solid #8EAEBD;
@@ -54,17 +54,16 @@ header {
       text-align: center;
       height: 40px;
       padding-top: 21px;
-      border-left: 1px solid #30415D; }
+      transition: color 0.1s ease;
+      transition: border 0.1s ease;
+      -webkit-animation: all 1s ease; }
       header .nav .navButton:hover {
         color: #8EAEBD;
         margin-top: 2px;
         margin-bottom: -3px;
-        height: 40px;
+        height: 39px;
         padding-top: 19px;
-        border-bottom: 2px solid #8EAEBD;
-        background-color: #031424;
-        transition: background 0.3s ease;
-        -webkit-animation: all 3s ease; }
+        border-bottom: 3px solid #8EAEBD; }
         header .nav .navButton:hover a {
           color: #8EAEBD; }
     header .nav table {

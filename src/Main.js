@@ -85,8 +85,15 @@ class App extends Component {
 
             <div className="body" >
               <div className="col-content">
-                <Element name="test1" className="element">
+                <Element name="about" className="element">
                 <div id="about" className="intro">
+
+              <Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>
+                <div className="downSection">
+                  <div className="downArrow"><img src="downarrow.png"></img></div>
+                </div>
+              </Link>
+
                   <h1>
                     Hi,
                   </h1>
@@ -104,6 +111,11 @@ class App extends Component {
                 <Element name="proj" className="element">
                 <div id="proj" className="projects">
                   <div className="project-display">
+                  <Link activeClass="active" to="proj" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>
+                    <div className="downSection">
+                      <div className="downArrowProj"><img src="downarrow.png"></img></div>
+                    </div>
+                  </Link>
                   <h1> PROJECTS </h1>
 
                     <div className="project-board">
@@ -157,6 +169,11 @@ class App extends Component {
         <Element name="contact" className="element">
         <footer id="contact">
           <div className="bottom">
+          <Link activeClass="active" to="contact" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>
+            <div className="downSection">
+              <div className="downArrowContact"><img src="downarrow.png"></img></div>
+            </div>
+          </Link>
             <div className="bottom-left">
               <img src="lonbluebottle.png"></img>
             </div>

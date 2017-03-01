@@ -13,9 +13,62 @@
   border: 1px solid white;
   border-radius: 5px; }
   .button:hover {
-    transition: background 0.5s ease;
+    transition: background 0.2s ease;
     background-color: #30415D;
     color: #Cf6766; }
+
+.downSection {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex; }
+  .downSection .downArrow {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #30415D;
+    margin-top: -143px; }
+    .downSection .downArrow img {
+      width: 40px;
+      height: 40px;
+      margin-top: 10px;
+      margin-left: 10px; }
+    .downSection .downArrow:hover {
+      background-color: #8EAEBD;
+      transition: background 0.2s ease; }
+  .downSection .downArrowProj {
+    margin-top: -325px;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #30415D; }
+    .downSection .downArrowProj img {
+      width: 40px;
+      height: 40px;
+      margin: 0 auto;
+      padding-top: 10px; }
+    .downSection .downArrowProj:hover {
+      background-color: #8EAEBD;
+      transition: background 0.2s ease; }
+  .downSection .downArrowContact {
+    margin-top: -460px;
+    margin-left: 310px;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #30415D;
+    z-index: 2000; }
+    .downSection .downArrowContact img {
+      width: 40px;
+      height: 40px;
+      margin-left: 10px;
+      padding-top: 10px; }
+    .downSection .downArrowContact:hover {
+      background-color: #8EAEBD;
+      transition: background 0.2s ease; }
 
 .Main-layout {
   display: flex;
