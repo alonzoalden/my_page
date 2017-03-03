@@ -38,21 +38,33 @@ header
   position: fixed
   width: 89%
   border-bottom: 2px solid #30415D
+  opacity: .95
 
   .nav
     display: flex
-
     .logo
       margin-left: 25px
+      margin-right: 25px
       width: 90px
-      margin-top: 21px
-      font-weight: bold
-      white-space: normal
-      word-wrap: break-word
       color: #031424
+      width: 70px
+      text-align: center
+      height: 40px
+      padding-top: 21px
+      transition: color 0.1s ease
+      transition: border 0.1s ease
+      -webkit-animation: all 1s ease
+
       &:hover
         color: #8EAEBD
+        margin-top: 2px
+        margin-bottom: -3px
+        height: 39px
+        padding-top: 19px
+        border-bottom: 3px solid #8EAEBD
 
+        a
+          color: #8EAEBD
     .navButton
       width: 70px
       text-align: center
@@ -103,12 +115,11 @@ header
 
 
   .socialNetwork
-
-    border: 1px solid black
     height: 30px
     width: 30px
     border-radius: 100%
     margin-top: 15px
+    margin-right: 10%
     text-align: center
     z-index: 3333
     img
@@ -117,29 +128,11 @@ header
       height: 36px
       width: 36px
       z-index: 3334
-
-
     &:hover
       background-color: #8EAEBD
       transition: background 0.5s ease
       -webkit-animation: all 5s ease
 
-    h2
-      font-size: 200%
-
-
-    ul
-      display: flex
-
-      li
-        margin: 0 20px
-        margin-top: 1px
-        display: inline-block
-        &:hover
-          background-color: #8EAEBD
-          color: #Cf6766
-          transition: background 0.5s ease
-          -webkit-animation: all 5s ease
   .github
     margin-top: -10px
     display: flex
@@ -198,5 +191,23 @@ header
         margin-top: 0px
         height: 30px
 
+@media (max-width: 730px)
+  header
+    .nav
+      .smallHide
+        display: none
+
+
+@media (max-width: 670px)
+  header
+    .nav
+      height: 60px
+      margin-left: -80px
+      .logo
+
+      .navButton
+        display: none
+    .socialNetwork
+      margin-right: 100px
 
 

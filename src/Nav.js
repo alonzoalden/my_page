@@ -103,20 +103,16 @@ class Nav extends Component {
 
 
               <Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>
-                <div className="navButton">ABOUT</div>
+                <div className="navButton smallHide">ABOUT</div>
               </Link>
               <Link activeClass="active" to="proj" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>
                 <div className="navButton">PROJECTS</div>
               </Link>
-              <Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>
-                <div className="navButton">BLOG</div>
-              </Link>
-              <Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>
-                <div className="navButton">GITHUB</div>
-              </Link>
               <Link activeClass="active" to="contact" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>
                 <div className="navButton">CONTACT</div>
               </Link>
+              <a href="https://github.com/alonzoalden" target="_blank"><div className="navButton">GITHUB</div></a>
+
 
 
         </div>
@@ -130,23 +126,23 @@ class Nav extends Component {
           contentLabel="Example Modal"
         >
           <div className="socialTab">
-            <a href="https://github.com/alonzoalden/">GITHUB</a>
+            <a href="https://github.com/alonzoalden/" target="_blank">GITHUB</a>
           </div>
           <div className="socialTab">
-            <a href="https://github.com/alonzoalden/">LINKEDIN</a>
+            <a href="https://www.linkedin.com/in/alonzo-alden-46b28637/" target="_blank">LINKEDIN</a>
           </div>
           <div className="socialTab">
-            <a href="https://github.com/alonzoalden/">STRAVA</a>
+            <a href="https://www.strava.com/athletes/929395" target="_blank">STRAVA</a>
           </div>
           <div className="socialTab">
-            <a href="https://github.com/alonzoalden/">INSTAGRAM</a>
+            <a href="https://www.instagram.com/attaboylonnie/" target="_blank">INSTAGRAM</a>
           </div>
           <div className="socialTab">
-            <a href="https://github.com/alonzoalden/">FACEBOOK</a>
+            <a href="https://www.facebook.com/alonzo.alden" target="_blank">FACEBOOK</a>
           </div>
           <br /><br />
           <div className="socialTab" onClick={this.closeModal}>
-            <a href="http://www.google.com">BACK</a>
+            <a href="">BACK</a>
           </div>
 
         </Modal>

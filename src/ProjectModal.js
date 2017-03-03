@@ -59,7 +59,11 @@ class ProjectModal extends Component {
     } else {
 
     return (
-      <div className='button'>DEPLOYED LINK</div>
+      <div>
+
+          <div className='button'>DEPLOYED LINK</div>
+
+      </div>
       )
     }
   }
@@ -82,9 +86,12 @@ class ProjectModal extends Component {
             <div style={{flexGrow: '1', display: 'flex'}}>
 
               {this.showDeployButton(this.props.url)}
-              <div className='button'>GITHUB</div>
+
+
+                <div className='button'>GITHUB</div>
+
             </div>
-            <div className='button'>CLOSE</div>
+            <div onClick={this.closeModal} className='button'>CLOSE</div>
           </div>
         </Modal>
 

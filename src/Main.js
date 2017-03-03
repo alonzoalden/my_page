@@ -86,7 +86,7 @@ class App extends Component {
             <div className="body" >
               <div className="col-content">
                 <Element name="about" className="element">
-                <div id="about" className="intro">
+                <div id="" className="intro">
 
               <Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>
                 <div className="downSection">
@@ -112,9 +112,7 @@ class App extends Component {
                 <div id="proj" className="projects">
                   <div className="project-display">
                   <Link activeClass="active" to="proj" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>
-                    <div className="downSection">
-                      <div className="downArrowProj"><img src="downarrow.png"></img></div>
-                    </div>
+
                   </Link>
                   <h1> PROJECTS </h1>
 
@@ -144,7 +142,7 @@ class App extends Component {
                         desc="This is the website you are currently visiting. It has original design, style, and images by me. "
                         tech="React, Node.js, Express, Webpack"
                         github="https://github.com/alonzoalden/my_page"
-                        url="https://keep-fit-app.herokuapp.com/">
+                        url="https://alonzoalden.herokuapp.com">
                       </ProjectModal>
                       <ProjectModal
                         title="Run Keeper"
@@ -170,39 +168,37 @@ class App extends Component {
         <footer id="contact">
           <div className="bottom">
           <Link activeClass="active" to="contact" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>
-            <div className="downSection">
-              <div className="downArrowContact"><img src="downarrow.png"></img></div>
-            </div>
+
           </Link>
-            <div className="bottom-left">
-              <img src="lonbluebottle.png"></img>
-            </div>
-            <div className="bottom-mid"><span style={{color: '#8EAEBD'}}> Thanks for stopping by. </span><br/><span style={{color: '#30415D'}}>Get in touch.</span><br/>
+
+            <div className="bottom-left"><span style={{color: '#8EAEBD'}}> Thanks for stopping by. </span><br/><span style={{color: '#30415D'}}>Get in touch.</span><br/>
               <span style={{color: '#30415D', fontSize: '18px'}}>alonzoalden@gmail.com</span>
 
 
                 <table>
                   <tr>
                     <td>
-                      <a href="https://github.com/alonzoalden/">GITHUB</a>
+                      <a href="https://github.com/alonzoalden/" target="_blank">GITHUB</a>
                     </td>
                     <td>
-                      <a href="https://github.com/alonzoalden/">LINKEDIN</a>
+                      <a href="https://www.linkedin.com/in/alonzo-alden-46b28637/" target="_blank">LINKEDIN</a>
                     </td>
                     <td>
-                      <a href="https://github.com/alonzoalden/">INSTAGRAM</a>
+                      <a href="https://www.instagram.com/attaboylonnie/" target="_blank">INSTAGRAM</a>
                     </td>
                     <td>
-                      <a href="https://github.com/alonzoalden/">STRAVA</a>
+                      <a href="https://www.strava.com/athletes/929395" target="_blank">STRAVA</a>
                     </td>
                     <td>
-                      <a href="https://github.com/alonzoalden/">FACEBOOK</a>
+                      <a href="https://www.facebook.com/alonzo.alden" target="_blank">FACEBOOK</a>
                     </td>
                   </tr>
                 </table>
 
             </div>
-
+            <div className="bottom-right">
+              <img src="lonbluebottle.png"></img>
+            </div>
           </div>
 
           <div className="copyright"><p>© 2017 <a href="mailto:alonzoalden@gmail.com">Alonzo Alden</a> </p>

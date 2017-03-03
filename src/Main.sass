@@ -70,7 +70,6 @@ $lightBlueRGBA: "rgba(142, 174, 189, 1)"
     position: absolute
     width: 60px
     height: 60px
-
     border-radius: 100%
     background-color: #30415D
     z-index: 2000
@@ -86,7 +85,6 @@ $lightBlueRGBA: "rgba(142, 174, 189, 1)"
   display: flex
   flex-direction: column
   /*height: calc(100vh)*/
-
 
   .Main-photo
     margin-top: 61px
@@ -261,53 +259,23 @@ footer
       border-radius: 0px
 
 
-    .bottom-left
+    .bottom-right
       img
         width: 200px
         border-radius: 3px
 
-
-    .bottom-right
-      border: 1px solid black
-      width: 225px
-      padding-top: 35px
-      text-align: left
-      a
-        text-decoration: none
-        color: #8EAEBD
-      h1
-        margin-left: 40px
-        color: white
-
-      h2
-        margin-left: 40px
-
-      ul
-        align-items: center
-        width: 70%
-        font-size: 140%
-        font-weight: bold
-
-        li
-          align-items: center
-          margin: 0 auto
-          display: inline-block
-
-
-
-
-    .bottom-mid
+    .bottom-left
       width: 425px
 
-      text-align: right
+      text-align: left
       font-size: 300%
       font-weight: strong
 
       table
         text-align: center
         font-size: 18px
-        margin-right: 0px
-        margin-left: auto
+        margin-right: auto
+        margin-left: -15px
 
         td
           width: 70px
@@ -330,13 +298,21 @@ footer
 
 
 
+@media (max-width: 1170px)
+  .Main-layout
+    .Main-photo
+      background-image: url(alonzowide1.png)
+
+
 @media (max-width: 800px)
+
   .sml
     display: none
 
   .Main-layout
+    .Main-photo
+      background-image: url(alonzowide1.png)
     header
-      display: none
       .nav
         ul
           li:first-of-type
@@ -366,4 +342,88 @@ footer
     .col-sidebar
       min-width: 100%
 
+@media (max-width: 960px)
+  .Main-layout
+    .Main-photo
+      background-image: url(alonzowide2.png)
 
+
+@media (max-width: 650px)
+  .Main-layout
+    .Main-photo
+      background-image: url(alonzo-sml-px.png)
+    .Main-photo-text
+      margin-top: -200px
+
+@media (max-width: 730px)
+  .downSection
+    margin-top: -200px
+  .Main-layout
+    .Main-photo
+      background-image: url(alonzo-sml-px.png)
+    .Main-photo-text
+      margin-top: -200px
+    .body
+      .col-content
+        .intro
+          width: 90%
+          margin-top: -150px
+          margin-left: 5%
+          margin-right: 5%
+          margin-bottom: -350px
+          word-wrap: break
+          h1
+            font-size: 110%
+          .downArrow
+            display: none
+        .projects
+          .project-display
+            width: 90%
+            margin-top: -110px
+            margin-left: 25px
+            margin-right: 25px
+            align-item: center
+            h1
+
+            .project-board
+              width: 55%
+              margin-left: 5%
+              margin-right: 5%
+              margin: 0 auto
+
+  footer
+    .bottom
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      .bottom-left
+        flex-order: 1
+        width: 350px
+        margin-left: 25px
+        margin-right: 25px
+      .bottom-right
+        flex-order: 2
+
+@media (max-width: 625px)
+  .Main-layout
+    .body
+      .col-content
+        .projects
+          margin-top: 70px
+          .project-display
+            width: 100%
+            margin-left: 25px
+            margin-right: 25px
+            align-item: center
+            h1
+              margin-right: 50px
+
+            .project-board
+              width: 80%
+              margin-left: 5%
+              margin-right: 5%
+  footer
+    margin-top: -90px
+    .bottom
+      .bottom-right
+        margin-top: -80px
