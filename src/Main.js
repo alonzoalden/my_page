@@ -140,7 +140,7 @@ class App extends Component {
                         title="My Portfolio"
                         img="portfolio.png"
                         desc="This is the website you are currently visiting. It has original design, style, and images by me. "
-                        tech="React, Node.js, Express, Webpack"
+                        tech="React, SASS, Node.js, Express, Webpack"
                         github="https://github.com/alonzoalden/my_page"
                         url="https://alonzoalden.herokuapp.com">
                       </ProjectModal>

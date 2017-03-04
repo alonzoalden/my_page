@@ -22,8 +22,10 @@ $lightBlueRGBA: "rgba(142, 174, 189, 1)"
   text-align: center
   border: 1px solid white
   border-radius: 5px
+  a
+    text-decoration: none
   &:hover
-    transition: background 0.2s ease
+    transition: background 0.1s ease
     background-color: #30415D
     color: #Cf6766
 
@@ -90,16 +92,14 @@ $lightBlueRGBA: "rgba(142, 174, 189, 1)"
     margin-top: 61px
     background-image: url(alonzo-wide.png)
     background-size: cover
-
     height: 500px
-    z-index: 0
-    box-shadow: 0px 20px 100px #Cf6766
 
     .Main-photo-mask
       background: linear-gradient(to right, #Cf6766, rgba(255, 255, 255, 0) 60%)
       height: 500px
       opacity: 0.6
       z-index: 2
+      box-shadow: 50px 50px 100px #Cf6766
 
   .Main-photo-text
     height: 500px
@@ -370,13 +370,14 @@ footer
           margin-top: -150px
           margin-left: 5%
           margin-right: 5%
-          margin-bottom: -350px
+          margin-bottom: -55%
           word-wrap: break
           h1
             font-size: 110%
           .downArrow
             display: none
         .projects
+          padding-bottom: 80px
           .project-display
             width: 90%
             margin-top: -110px

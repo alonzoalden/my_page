@@ -60,9 +60,9 @@ class ProjectModal extends Component {
 
     return (
       <div>
-
+        <a href={url} target="_blank">
           <div className='button'>DEPLOYED LINK</div>
-
+        </a>
       </div>
       )
     }
@@ -88,7 +88,9 @@ class ProjectModal extends Component {
               {this.showDeployButton(this.props.url)}
 
 
+              <a href={this.props.github} target="_blank">
                 <div className='button'>GITHUB</div>
+              </a>
 
             </div>
             <div onClick={this.closeModal} className='button'>CLOSE</div>
