@@ -16,11 +16,13 @@
   text-align: center;
   height: 50px;
   width: 100%;
-  font-size: 32px; }
+  font-size: 32px;
+  color: #031424; }
   .socialTab a {
     text-decoration: none;
     color: #031424; }
   .socialTab:hover {
+    color: #8EAEBD;
     background-color: #031424; }
     .socialTab:hover a {
       color: #8EAEBD; }

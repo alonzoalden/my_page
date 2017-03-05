@@ -125,21 +125,31 @@ class Nav extends Component {
           style={customStyles}
           contentLabel="Example Modal"
         >
-          <div className="socialTab">
-            <a href="https://github.com/alonzoalden/" target="_blank">GITHUB</a>
-          </div>
-          <div className="socialTab">
-            <a href="https://www.linkedin.com/in/alonzo-alden-46b28637/" target="_blank">LINKEDIN</a>
-          </div>
-          <div className="socialTab">
-            <a href="https://www.strava.com/athletes/929395" target="_blank">STRAVA</a>
-          </div>
-          <div className="socialTab">
-            <a href="https://www.instagram.com/attaboylonnie/" target="_blank">INSTAGRAM</a>
-          </div>
-          <div className="socialTab">
-            <a href="https://www.facebook.com/alonzo.alden" target="_blank">FACEBOOK</a>
-          </div>
+          <a href="https://github.com/alonzoalden/" target="_blank">
+            <div className="socialTab">
+              GITHUB
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/alonzo-alden-46b28637/" target="_blank">
+            <div className="socialTab">
+              LINKEDIN
+            </div>
+          </a>
+          <a href="https://www.strava.com/athletes/929395" target="_blank">
+            <div className="socialTab">
+              STRAVA
+            </div>
+          </a>
+          <a href="https://www.instagram.com/attaboylonnie/" target="_blank">
+            <div className="socialTab">
+              INSTAGRAM
+            </div>
+          </a>
+          <a href="https://www.facebook.com/alonzo.alden" target="_blank">
+            <div className="socialTab">
+              FACEBOOK
+            </div>
+          </a>
           <br /><br />
           <div className="socialTab" onClick={this.closeModal}>
             <a href="">BACK</a>
