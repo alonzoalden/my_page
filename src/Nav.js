@@ -93,31 +93,35 @@ class Nav extends Component {
       <header>
         <div className="nav">
 
-          <Link activeClass="active" to="top" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>
-            <div className="logo">
-              ALONZO ALDEN
-            </div>
-          </Link>
+          <div className="pointer">
+            <Link activeClass="active" to="top" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>
+              <div className="logo">
+                ALONZO ALDEN
+              </div>
+            </Link>
+          </div>
+          <div className="pointer">
 
-
-
-
-              <Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>
-                <div className="navButton smallHide">ABOUT</div>
-              </Link>
-              <Link activeClass="active" to="proj" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>
-                <div className="navButton">PROJECTS</div>
-              </Link>
-              <Link activeClass="active" to="contact" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>
-                <div className="navButton">CONTACT</div>
-              </Link>
-              <a href="https://github.com/alonzoalden" target="_blank"><div className="navButton">GITHUB</div></a>
-
-
+            <Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>
+              <div className="navButton smallHide">ABOUT</div>
+            </Link>
+          </div>
+          <div className="pointer">
+            <Link activeClass="active" to="proj" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>
+              <div className="navButton">PROJECTS</div>
+            </Link>
+          </div>
+          <div className="pointer">
+            <Link activeClass="active" to="contact" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>
+              <div className="navButton">CONTACT</div>
+            </Link>
+          </div>
+          <a href="https://github.com/alonzoalden" target="_blank"><div className="navButton">GITHUB</div></a>
 
         </div>
 
-        <div className="socialNetwork" onClick={this.openModal}>
+
+        <div className="socialNetwork pointer" onClick={this.openModal}>
         <Modal
           isOpen={this.state.modalIsOpen}
           onAfterOpen={this.afterOpenModal}
@@ -151,7 +155,7 @@ class Nav extends Component {
             </div>
           </a>
           <br /><br />
-          <div className="socialTab" onClick={this.closeModal}>
+          <div className="socialTab pointer" onClick={this.closeModal}>
             <a href="">BACK</a>
           </div>
 

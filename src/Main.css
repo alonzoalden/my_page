@@ -1,6 +1,9 @@
 .hide {
   display: none; }
 
+.pointer {
+  cursor: Pointer; }
+
 .button {
   color: white;
   font-weight: bold;
@@ -97,27 +100,29 @@
       margin-left: 12%;
       background-color: rgba(142, 174, 189, 0.83);
       color: #FFEDED;
-      width: 300px;
-      height: 90px;
+      width: 400px;
+      height: 100px;
       text-align: center;
-      font-size: 60px;
+      font-size: 80px;
       z-index: 70;
-      padding-top: 2px;
       position: absolute;
       /*box-shadow: 3px 3px 3px #031424 */ }
+      .Main-layout .Main-photo-text .Main-photo-text-name p {
+        margin-top: -5px; }
     .Main-layout .Main-photo-text .Main-photo-text-desc {
       margin-top: 180px;
-      margin-left: 20%;
+      margin-left: 18%;
       background-color: rgba(48, 65, 93, 0.83);
       color: #CF6766;
-      width: 300px;
-      height: 80px;
+      width: 400px;
+      height: 100px;
       text-align: center;
-      font-size: 25px;
+      font-size: 40px;
       z-index: 60;
       position: absolute;
-      padding-bottom: 0px;
       /*box-shadow: 2px 2px 2px #031424 */ }
+      .Main-layout .Main-photo-text .Main-photo-text-desc p {
+        margin-top: 25px; }
   .Main-layout .body {
     display: flex;
     flex-grow: 1;
@@ -190,9 +195,9 @@
           .Main-layout .body .col-content .projects .project-display .project-board {
             margin: 0 auto;
             display: flex;
-            flex-wrap: wrap;
             width: 650px;
             height: auto;
+            align-items: center;
             border-radius: 5px; }
             .Main-layout .body .col-content .projects .project-display .project-board a {
               text-decoration: none; }
@@ -288,7 +293,7 @@ footer {
   .Main-layout .Main-photo {
     background-image: url(alonzo-sml-px.png); }
   .Main-layout .Main-photo-text {
-    margin-top: -200px; }
+    margin-top: -210px; }
   .Main-layout .body .col-content .intro {
     width: 90%;
     margin-top: -150px;
@@ -309,6 +314,7 @@ footer {
       margin-right: 25px;
       align-item: center; }
       .Main-layout .body .col-content .projects .project-display .project-board {
+        flex-wrap: wrap;
         width: 55%;
         margin-left: 5%;
         margin-right: 5%;
@@ -326,6 +332,12 @@ footer {
     footer .bottom .bottom-right {
       flex-order: 2; } }
 @media (max-width: 625px) {
+  .Main-layout .Main-photo-text {
+    margin-left: -40px; }
+    .Main-layout .Main-photo-text .Main-photo-text-name {
+      width: 360px; }
+    .Main-layout .Main-photo-text .Main-photo-text-desc {
+      width: 360px; }
   .Main-layout .body .col-content .projects {
     margin-top: 70px; }
     .Main-layout .body .col-content .projects .project-display {

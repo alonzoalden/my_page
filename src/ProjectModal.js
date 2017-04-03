@@ -35,6 +35,7 @@ class ProjectModal extends Component {
     this.state = {
       modalIsOpen: false
     }
+
   this.openModal = this.openModal.bind(this);
   this.afterOpenModal = this.afterOpenModal.bind(this);
   this.closeModal = this.closeModal.bind(this);
@@ -70,7 +71,7 @@ class ProjectModal extends Component {
 
   render() {
     return (
-      <div className="project" onClick={this.openModal}>
+      <div className="project pointer" onClick={this.openModal}>
         <Modal
           isOpen={this.state.modalIsOpen}
           onAfterOpen={this.afterOpenModal}
@@ -93,7 +94,7 @@ class ProjectModal extends Component {
               </a>
 
             </div>
-            <div onClick={this.closeModal} className='button'>CLOSE</div>
+            <div onClick={this.closeModal} className='button pointer'>CLOSE</div>
           </div>
         </Modal>
 

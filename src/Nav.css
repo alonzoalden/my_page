@@ -39,9 +39,11 @@ header {
   position: fixed;
   width: 89%;
   border-bottom: 2px solid #30415D;
-  opacity: 0.95; }
+  opacity: 1; }
   header .nav {
     display: flex; }
+    header .nav .pointer {
+      cursor: Pointer; }
     header .nav .logo {
       margin-left: 25px;
       margin-right: 25px;

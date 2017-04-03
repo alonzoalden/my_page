@@ -40,10 +40,12 @@ header
   position: fixed
   width: 89%
   border-bottom: 2px solid #30415D
-  opacity: .95
+  opacity: 1
 
   .nav
     display: flex
+    .pointer
+      cursor: Pointer
     .logo
       margin-left: 25px
       margin-right: 25px
@@ -64,15 +66,14 @@ header
         height: 39px
         padding-top: 19px
         border-bottom: 3px solid #8EAEBD
-
         a
           color: #8EAEBD
+
     .navButton
       width: 70px
       text-align: center
       height: 40px
       padding-top: 21px
-
       transition: color 0.1s ease
       transition: border 0.1s ease
       -webkit-animation: all 1s ease
